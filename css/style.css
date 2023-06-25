@@ -239,7 +239,7 @@ header .logo{
 }
 
 header .logo img{
-  max-height: 30px;
+  max-height: 50px;
 }
 
 header nav{
@@ -1617,7 +1617,7 @@ footer{
 }
 
 footer .copyright img{
-  max-height: 35px;
+  max-height: 50px;
 }
 
 .copyright p{
