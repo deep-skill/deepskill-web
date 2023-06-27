@@ -472,6 +472,20 @@ header nav ul li a:focus{
   font-size: 15px;
 }
 
+.whatsapp-btn a{
+  color: #fff;
+  font-size: 35px;
+}
+
+.whatsapp-btn span{
+  color: #fff;
+  font-size: 18px;
+}
+
+.whatsapp-btn a:hover{
+  color: #25d366;
+}
+
 .swiper-slide:before{
   content: '';
   position: absolute;
@@ -1335,8 +1349,8 @@ content: '\f03e';
 .anews .title{
   font-weight: 600;
   letter-spacing: -1px;
-  font-size: 26px;
-  line-height: 32px;
+  font-size: 20px;
+  line-height: 29px;
 }
 
 .anews .category{
@@ -1981,7 +1995,6 @@ footer .getintouch {
   line-height: 38px;
 }
 
-}
 
 @media screen and (max-width: 414px) {
 
