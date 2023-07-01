@@ -1357,11 +1357,11 @@ content: '\f03e';
   font-weight: 700;
   line-height: 52px;
 }
-
+/* @TODO
 .anews:hover > .image{
   opacity: 1;
 }
-
+*/
 .anews .image{
   opacity: 0;
   width: 100%;
