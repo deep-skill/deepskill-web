@@ -833,7 +833,7 @@ section{
 }
 
 .about .infos .info p, .services .service p {
-  font-size: 14px;
+  font-size: 15px;
   line-height: 24px;
 }
 
@@ -1799,20 +1799,20 @@ footer .getintouch p {
 
 
 .slider-content span:before, .site-btn, .section-title:before, .swiper-pagination-bullet-active{
-  background: #ff0e2a;
+  background: #4451ff;
 }
 
 
 .section-title span, .counter .title, .testimonials .item span, .anews .category, .article-comments .comment-content .reply, .news-article .category{
-  color: #ff0e2a;
+  color: #4451ff;
 }
 
 .service:hover{
-  background: #ff0e2a !important;
+  background: #4451ff !important;
 }
 
 .site-btn:hover{
-  background: #e80000;
+  background: #4451ff;
 }
 
 .nav-icon{
