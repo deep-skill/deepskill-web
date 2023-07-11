@@ -893,13 +893,13 @@ section{
 }
 
 .testimonials .item figure img{
-  max-width: 90px;
+  max-width: 120px;
   margin: 0 auto;
-  border-radius: 50px;
-  -webkit-border-radius: 50px;
-  -moz-border-radius: 50px;
-  -ms-border-radius: 50px;
-  -o-border-radius: 50px;
+  border-radius: 70px;
+  -webkit-border-radius: 70px;
+  -moz-border-radius: 70px;
+  -ms-border-radius: 70px;
+  -o-border-radius: 70px;
 }
 
 .testimonials .item .name {
