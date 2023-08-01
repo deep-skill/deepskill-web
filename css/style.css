@@ -615,6 +615,12 @@ header nav ul li a:focus{
   -o-transition: all  ease 0.3s;
 }
 
+@media screen and (min-width: 768px) and (max-width: 992px){
+  .site-btn {
+      margin-bottom: 40px;
+  }
+}
+
 .site-btn:hover{
   color: #fff;
 }
