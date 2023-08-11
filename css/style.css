@@ -587,6 +587,10 @@ header nav ul li a:focus{
   display: inline-block;
 }
 
+.slider-content-margin {
+  margin-right: 12vw;
+}
+
 .slider-content span:before{
   content: '';
   width: 40px;
