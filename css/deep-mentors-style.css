@@ -239,7 +239,7 @@ header .logo{
 }
 
 header .logo img{
-  max-height: 30px;
+  max-height: 50px;
 }
 
 header nav{
@@ -472,6 +472,20 @@ header nav ul li a:focus{
   font-size: 15px;
 }
 
+.whatsapp-btn a{
+  color: #fff;
+  font-size: 35px;
+}
+
+.whatsapp-btn span{
+  color: #fff;
+  font-size: 18px;
+}
+
+.whatsapp-btn a:hover{
+  color: #25d366;
+}
+
 .swiper-slide:before{
   content: '';
   position: absolute;
@@ -573,6 +587,10 @@ header nav ul li a:focus{
   display: inline-block;
 }
 
+.slider-content-margin {
+  margin-right: 12vw;
+}
+
 .slider-content span:before{
   content: '';
   width: 40px;
@@ -599,6 +617,12 @@ header nav ul li a:focus{
   -moz-transition: all ease 0.3s;
   -ms-transition: all ease 0.3s;
   -o-transition: all  ease 0.3s;
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px){
+  .site-btn {
+      margin-bottom: 40px;
+  }
 }
 
 .site-btn:hover{
@@ -819,7 +843,7 @@ section{
 }
 
 .about .infos .info p, .services .service p {
-  font-size: 14px;
+  font-size: 15px;
   line-height: 24px;
 }
 
@@ -879,13 +903,13 @@ section{
 }
 
 .testimonials .item figure img{
-  max-width: 90px;
+  max-width: 120px;
   margin: 0 auto;
-  border-radius: 50px;
-  -webkit-border-radius: 50px;
-  -moz-border-radius: 50px;
-  -ms-border-radius: 50px;
-  -o-border-radius: 50px;
+  border-radius: 70px;
+  -webkit-border-radius: 70px;
+  -moz-border-radius: 70px;
+  -ms-border-radius: 70px;
+  -o-border-radius: 70px;
 }
 
 .testimonials .item .name {
@@ -1335,19 +1359,19 @@ content: '\f03e';
 .anews .title{
   font-weight: 600;
   letter-spacing: -1px;
-  font-size: 26px;
-  line-height: 32px;
+  font-size: 20px;
+  line-height: 29px;
 }
 
 .anews .category{
   font-weight: 700;
   line-height: 52px;
 }
-
+/* @TODO
 .anews:hover > .image{
   opacity: 1;
 }
-
+*/
 .anews .image{
   opacity: 0;
   width: 100%;
@@ -1617,7 +1641,7 @@ footer{
 }
 
 footer .copyright img{
-  max-height: 35px;
+  max-height: 50px;
 }
 
 .copyright p{
@@ -1672,11 +1696,21 @@ footer .getintouch p {
   margin-bottom: 0;
 }
 
+.whatsappButton {
+    position: fixed;
+    right: 30px;
+    bottom: 100px;
+    width: 60px;
+    z-index: 1000;
+  img {
+    width: 100%;
+    heigth: auto;
+  }
+}
+
 .dark, .dark .wrapper{
   background:#000;
 }
-
-
 
 .dark .about .text p, .dark .section-title .title, .dark .second-title, .dark .about .infos .info p, .dark .services .service p, .dark .service i:before, .dark .counter-value, .dark .testimonials .item p, .dark .testimonials .item .title, .dark .getintouch .contact-info .info i, .dark .getintouch .contact-info .info a, .dark .getintouch .contact-info .info p, .dark .anews .date, .dark .anews .title, .dark textarea::placeholder, .dark .form-inp::placeholder, .dark .portfolio_filter ul li a {
   color: #fff;
@@ -1785,20 +1819,20 @@ footer .getintouch p {
 
 
 .slider-content span:before, .site-btn, .section-title:before, .swiper-pagination-bullet-active{
-  background: #ff0e2a;
+  background: #4451ff;
 }
 
 
 .section-title span, .counter .title, .testimonials .item span, .anews .category, .article-comments .comment-content .reply, .news-article .category{
-  color: #ff0e2a;
+  color: #4451ff;
 }
 
 .service:hover{
-  background: #ff0e2a !important;
+  background: #4451ff !important;
 }
 
 .site-btn:hover{
-  background: #e80000;
+  background: #4451ff;
 }
 
 .nav-icon{
@@ -1883,28 +1917,28 @@ footer .getintouch p {
 
 @media screen and (max-width: 768px) {
 
-  .news-article{
+  .news-article {
     margin-bottom: 90px;
-}
+  }
 
-.comment figure img{
-  display: none;
-}
+  .comment figure img {
+    display: none;
+  }
 
-.comment.reply.top_45{
-  margin-top: 0;
-}
+  .comment.reply.top_45 {
+    margin-top: 0;
+  }
 
-.comment.reply{
-  padding-left: 0 !important;
-}
+  .comment.reply {
+    padding-left: 0 !important;
+  }
 
   .slider-content h1 {
     font-size: 80px;
     line-height: 90px;
   }
 
-  .about .text{
+  .about .text {
     margin-bottom: 90px;
   }
 
@@ -1914,12 +1948,12 @@ footer .getintouch p {
 
   .counter .title {
     padding-top: 8px;
-    font-size: 11px;    
+    font-size: 11px;
     line-height: 14px;
     padding-left: 7px
   }
 
-  .portfolio_filter{
+  .portfolio_filter {
     margin-top: 0;
     float: left;
     margin-bottom: 30px;
@@ -1933,54 +1967,53 @@ footer .getintouch p {
     padding: 0 60px;
   }
 
-  .anews{
+  .anews {
     margin-bottom: 30px;
   }
 
-  .contact-form{
-    margin-top:50px;
+  .contact-form {
+    margin-top: 50px;
   }
 
   body {
     padding-bottom: 340px;
-} 
+  }
 
-footer{
-  padding: 40px 0;
-}
+  footer {
+    padding: 40px 0;
+  }
 
-.copyright{
-  text-align: center
-}
+  .copyright {
+    text-align: center
+  }
 
-footer .getintouch {
-  text-align: center;
-  margin-top: 31px;
-}
+  footer .getintouch {
+    text-align: center;
+    margin-top: 31px;
+  }
 
-.ftr-social {
-  text-align: center;
-  margin: 10px 0;
-}
+  .ftr-social {
+    text-align: center;
+    margin: 10px 0;
+  }
 
-.ftr-social .social a:last-child{
-  margin-right: 0;
-}
+  .ftr-social .social a:last-child {
+    margin-right: 0;
+  }
 
 
-.about .info{
-  margin-bottom: 30px;
-}
+  .about .info {
+    margin-bottom: 30px;
+  }
 
-.about .info:last-child{
-  margin-bottom:0;
-}
+  .about .info:last-child {
+    margin-bottom: 0;
+  }
 
-.news-article .title {
-  font-size: 30px;        
-  line-height: 38px;
-}
-
+  .news-article .title {
+    font-size: 30px;
+    line-height: 38px;
+  }
 }
 
 @media screen and (max-width: 414px) {
@@ -2064,8 +2097,6 @@ section {
 
 
 }
-
-
 
 @media screen and (max-width: 320px) {
 
