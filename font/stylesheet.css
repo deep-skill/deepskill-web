@@ -21,6 +21,16 @@
 }
 
 @font-face {
+    font-family: 'Poppins-Regular';
+    src: url('Poppins-Regular.otf');
+}
+
+@font-face {
+    font-family: 'Poppins-Black';
+    src: url('Poppins-Black.otf');
+}
+
+@font-face {
     font-family: 'Gilroy';
     src: url('Gilroy-Black.eot');
     src: url('Gilroy-Black.eot?#iefix') format('embedded-opentype'),
