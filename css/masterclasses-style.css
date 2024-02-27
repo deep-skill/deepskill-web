@@ -410,6 +410,9 @@ header nav ul li a:focus {
   height: 100vh;
   margin: 0;
   padding: 0;
+  background-image: url("../img/background-masterclasses.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .hero .social {
@@ -618,7 +621,7 @@ iframe {
 }
 .info-container {
   z-index: 2;
-  width: 40%;
+  width: 45%;
   display: flex;
   background: var(--background-light-grey);
   flex-direction: column;
@@ -1951,6 +1954,7 @@ footer .getintouch p {
   }
   .hero .static-image .slider-content {
     width: 100%;
+    margin-top: 20%;
   }
   .info-container {
     margin: 0 auto;
