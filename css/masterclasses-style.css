@@ -846,6 +846,7 @@ section{
 
 .service{
   background: #f3f3f3;
+  height: 90%;
   padding: 30px;
   border-radius: 12px;
   -webkit-border-radius: 12px;
@@ -916,7 +917,6 @@ section{
 .testimonials .item .title{
   font-size: 18px;
   font-weight: 600;
-  line-height: 1px;
 }
 
 .testimonials .item span{
@@ -1712,11 +1712,14 @@ footer .getintouch p {
 }
 
 .dark .graybg{
-  background: #191919;
+  background: #000;
 }
 
+.dark .graybg2{
+  background: #ADDB1D;
+}
 .dark .graybg .service{
-  background: #000;
+  background: #292929;
 }
 
 .dark  .service{
@@ -1726,6 +1729,7 @@ footer .getintouch p {
 
 .dark .testimonials .outitem{
   background: #191919;
+  height: 57vh;
 }
 
 .dark .anews{
@@ -1806,7 +1810,7 @@ footer .getintouch p {
 
 
 .slider-content span:before, .site-btn, .section-title:before, .swiper-pagination-bullet-active{
-  background: #ADDB1D;
+  background: #000000;  
 }
 
 
@@ -1814,12 +1818,17 @@ footer .getintouch p {
   color: #ADDB1D;
 }
 
+.section-title, .text2 {
+  color: #000000 !important;
+}
+
+
 .service:hover{
-  background: #ff0e2a !important;
+  background: #ADDB1D !important;
 }
 
 .site-btn:hover{
-  background: #e80000;
+  background: #292929;
 }
 
 .nav-icon{
