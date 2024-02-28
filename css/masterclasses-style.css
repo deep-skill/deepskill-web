@@ -42,8 +42,9 @@ body {
 }
 
 p {
-  font-size: 16px;
-  line-height: 30px;
+  /* font-size: 16px;
+  line-height: 30px; */
+  margin: 0;
 }
 
 button {
@@ -577,7 +578,7 @@ header nav ul li a:focus {
   font-family: Poppins-Regular;
   font-size: 20px;
   text-align: justify;
-  margin-top: 50px;
+  margin-top: 10px;
   width: 80%;
   transform: translateX(100px);
   -webkit-transform: translateX(100px);
@@ -616,61 +617,108 @@ iframe {
 .video-container {
   height: 100vh;
   display: flex;
-  align-items: end;
+  align-items: center;
   justify-content: center;
 }
 .info-container {
+  position: relative;
   z-index: 2;
-  width: 45%;
+  width: 47%;
   display: flex;
+  margin-top: 10%;
   background: var(--background-light-grey);
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
-  height: 90%;
+  height: 69%;
+  justify-content: space-around;
   margin-right: 15%;
+  border: 3px solid var(--text-green-python);
   /* padding-bottom: 5%; */
 }
+.info-container > * {
+  /* margin-bottom: 30px; */
+}
 .info-container iframe {
-  width: 100%;
-  height: 200px;
+  width: 80%;
+  height: 27%;
+  position: absolute;
+  top: -13%;
+  /* position: absolute; */
+  /* top: -12%; */
   /* margin: 40px 0 20px 0; */
 }
+.empty-container {
+  width: 85%;
+  height: 14%;
+}
 .text-info {
-  /* z-index: 100; */
-  width: 90%;
-  /* padding: 20px 0 10px 0; */
-  /* padding-top: 20px; */
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .text-info p {
-  font-size: 15px;
-  line-height: 20px;
+  font-size: 1rem;
+  line-height: 15px;
 }
-#title {
+#title1,
+#title2 {
   color: var(--text-green-python);
+  font-size: 1.2rem;
+}
+.prices-container {
+  display: flex;
+  flex-direction: row;
+
+  width: 85%;
+  align-items: center;
+  justify-content: space-around;
 }
 .price-button {
   text-align: center;
   font-weight: bold;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .price-button p {
-  line-height: 12px;
-  font-size: 15px;
+  line-height: 0.5rem;
 }
-#price,
-#price-title {
-  color: var(--text-green-python);
+.price,
+.price-title {
+  color: var(--text-green-python) !important;
+  margin: 5% 0;
+}
+.descount-info {
+  background: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 15%;
+  width: 100%;
+}
+.descount-info p {
+  padding: 0;
+  margin: 0;
+  color: var(--text-green-python) !important;
+  line-height: 1.2rem;
+  font-weight: bold;
+}
+.descount {
+  font-size: 1.8rem;
 }
 #call-to-action {
   background: var(--text-green-python);
   color: black;
   border-radius: 20px;
-  font-size: 10px;
+  font-size: 1rem !important;
   width: 85%;
-  height: 35px;
+  height: 7%;
   font-weight: bold;
-  font-size: 12px;
-  margin-bottom: 30px;
+  /* margin-bottom: 23%; */
+  font-size: 80% !important;
 }
 .site-btn {
   display: inline-block;
@@ -1946,7 +1994,17 @@ footer .getintouch p {
     width: 1250px;
   }
 }
-@media screen and (max-width: 1175px) {
+@media screen and (max-width: 1255px) {
+  .slider-content h1 {
+    font-size: 75px;
+  }
+  #call-to-action {
+    font-size: 0.5rem !important;
+  }
+  .slider-content p {
+    margin-top: 0;
+    line-height: 20px;
+  }
 }
 @media screen and (max-width: 1024px) {
   header nav {
@@ -1969,7 +2027,7 @@ footer .getintouch p {
   }
   .info-container {
     margin: 0 auto;
-    width: 50%;
+    /* height: 80vh; */
   }
   .nav-icon {
     display: inline;
@@ -2031,13 +2089,19 @@ footer .getintouch p {
     height: 200vh;
   }
   .video-container {
-    align-items: start;
+    align-items: center;
+    height: 80%;
   }
   .info-container {
-    width: 80%;
+    /* max-width: 1000px; */
+  }
+  .info-container iframe {
   }
 }
 @media screen and (max-width: 768px) {
+  .info-container {
+    width: 80%;
+  }
   .news-article {
     margin-bottom: 90px;
   }
@@ -2165,11 +2229,11 @@ footer .getintouch p {
   .video-container {
     /* display:none; */
     align-items: center;
-    height: 70%;
-    margin-top: 30px;
+    /* height: 70%; */
+    /* margin-top: 30px; */
   }
   .info-container {
-    height: 80%;
+    height: 60%;
   }
   .slider-content span {
     font-size: 15px;
