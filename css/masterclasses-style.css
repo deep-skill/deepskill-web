@@ -650,6 +650,7 @@ iframe {
 .empty-container {
   width: 85%;
   height: 14%;
+  color: var(--background-light-grey);
 }
 .text-info {
   width: 80%;
