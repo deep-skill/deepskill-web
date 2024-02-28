@@ -28,7 +28,7 @@
 /*------------------------ 1 Body and Core Css ------------------------*/
 
 :root {
-  --background-light-grey: #393939;
+  --background-light-grey: #1c1c1c;
   --text-green-python: #addb1d;
 }
 html,
@@ -718,8 +718,11 @@ iframe {
   width: 85%;
   height: 7%;
   font-weight: bold;
-  /* margin-bottom: 23%; */
   font-size: 80% !important;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .site-btn {
   display: inline-block;
@@ -1864,7 +1867,7 @@ footer .getintouch p {
 }
 
 .dark .greenbg {
-  background: #ADDB1D;
+  background: #addb1d;
 }
 
 .dark .graybg2 {
@@ -1978,6 +1981,7 @@ footer .getintouch p {
 
 .section-title,
 .text2 {
+  margin-top: 10px;
   color: #000000 !important;
 }
 
@@ -2020,7 +2024,7 @@ footer .getintouch p {
     font-size: 75px;
   }
   #call-to-action {
-    font-size: 0.5rem !important;
+    font-size: 0.7rem !important;
   }
   .slider-content p {
     margin-top: 0;
