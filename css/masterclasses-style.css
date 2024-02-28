@@ -846,7 +846,7 @@ iframe {
 .section-title .title {
   font-size: 40px;
   font-weight: 700;
-  line-height: 24px;
+  line-height: 34px;
   letter-spacing: -1px;
 }
 
@@ -1814,6 +1814,10 @@ footer .getintouch p {
   background: #000;
 }
 
+.dark .greenbg {
+  background: #ADDB1D;
+}
+
 .dark .graybg2 {
   background: #addb1d;
 }
@@ -1827,7 +1831,7 @@ footer .getintouch p {
 
 .dark .testimonials .outitem {
   background: #191919;
-  height: 57vh;
+  height: 63vh;
 }
 
 .dark .anews {
@@ -1889,7 +1893,7 @@ footer .getintouch p {
   border-right: 0;
   border-bottom: 0;
   padding-top: 20px;
-  margin-top: 90px;
+  margin-top: 0px;
   box-shadow: none;
   background: none;
   margin-bottom: 0;
@@ -1926,6 +1930,22 @@ footer .getintouch p {
 .section-title,
 .text2 {
   color: #000000 !important;
+}
+
+.section-title,
+.textsubtitle {
+  color: black !important;
+  font-weight: 600;
+  margin: 0;
+  margin-top: 40px;
+}
+
+.section-title,
+.textsubtitle2 {
+  color: white !important;
+  font-weight: 600;
+  margin: 0;
+  margin-top: 40px;
 }
 
 .service:hover {
