@@ -660,7 +660,7 @@ iframe {
 }
 .text-info p {
   font-size: 1rem;
-  line-height: 15px;
+  line-height: 18px;
 }
 #title1,
 #title2 {
@@ -1880,7 +1880,7 @@ footer .getintouch p {
 
 .dark .testimonials .outitem {
   background: #191919;
-  height: 63vh;
+  height: 80vh;
 }
 
 .dark .anews {
@@ -2236,6 +2236,7 @@ footer .getintouch p {
     font-size: 15px;
     line-height: 20px;
     margin-right: 50px;
+    word-space: 3px;
   }
 }
 @media screen and (max-width: 470px) {
