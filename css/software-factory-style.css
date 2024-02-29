@@ -884,9 +884,11 @@ iframe {
 
 /*------------------ NUESTRO TRABAJO --------------------------*/
 .our-work {
-  width: 100%;
+  height: 100vh !important;
+}
+.sliderr {
+  background: red;
   height: 100vh;
-  background: blue;
 }
 /* ---------------------------------------------------- */
 @keyframes move {
