@@ -884,12 +884,39 @@ iframe {
 
 /*------------------ NUESTRO TRABAJO --------------------------*/
 .our-work {
-  height: 100vh !important;
+  height: 90vh !important;
 }
-.sliderr {
+#slide-1 {
+  background: blue;
+}
+#slider-info {
   background: red;
-  height: 100vh;
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
+#slider-info h1 {
+  font-size: 30px;
+  padding-left: 20px;
+
+  background: black;
+  margin: 0;
+}
+#slider-info span,
+#slider-info h6 {
+  padding-left: 20px;
+}
+#slider-info img {
+  height: 50vh;
+  object-fit: contain;
+}
+.slider-title-subtitle {
+  background: blue;
+  margin-top: 15px;
+}
+
 /* ---------------------------------------------------- */
 @keyframes move {
   0% {
