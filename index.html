@@ -1,430 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>  
-<title>MasterClass</title>
-<meta charset="UTF-8">
-<meta name="description" content="Nebro Portfolio Template">
-<meta name="keywords" content="onepage, portfolio">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-1XPVQHKL3S"></script>
+  <head>
+    <title>Nebro Portfolio Template</title>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Nebro Portfolio Template" />
+    <meta name="keywords" content="onepage, portfolio" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="font/stylesheet.css" />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Font icons -->
+    <link
+      rel="stylesheet"
+      href="icon-fonts/fontawesome-5.0.6/css/fontawesome-all.min.css"
+    />
+    <link rel="stylesheet" href="icon-fonts/flat-icon/flaticon.css" />
+
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800&display=swap"
+      rel="stylesheet"
+    />
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-MKSKVR581X"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'G-1XPVQHKL3S');
+  gtag('config', 'G-MKSKVR581X');
 </script>
-    <!-- Stylesheets -->
-    <link rel="stylesheet" href="font/stylesheet.css"/>
-    <link rel="stylesheet" href="css/masterclasses-style.css"/>
 
-  	<!--[if lt IE 9]>
-  	  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-  	  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-  	<![endif]--> 
-
-	   <!-- Font icons --> 
-    <link rel="stylesheet" href="icon-fonts/fontawesome-5.0.6/css/fontawesome-all.min.css"/>
-    <link rel="stylesheet" href="icon-fonts/flat-icon/flaticon.css"/>
-
-	   <!-- Google Font -->
-     <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800&display=swap" rel="stylesheet">
-     
-</head> 
-<body class="dark"> 
-
-  <!-- PRELOADER -->
-<div id="preloader">
-    <div class="loading-area">
-      <div class="logo"><img src="img/deepskill-logo.png" alt=""></div>
-      <span>loading...</span>
+  </head>
+  <body class="dark" style="padding: 0">
+    <!-- PRELOADER -->
+    <div id="preloader">
+      <div class="loading-area">
+        <div class="logo"><img src="img/logo.png" alt="" /></div>
+        <span>loading...</span>
+      </div>
+      <div class="left-side"></div>
+      <div class="right-side"></div>
     </div>
-    <div class="left-side"></div>
-    <div class="right-side"></div>
-  </div>
 
-<!-- HEADER 
+    <!-- HEADER 
 ==================================================-->
-<header>
-  <!-- Logo -->
-  <div class="logo">
-    <img src="img/deepskill-logo.png" alt="">
-  </div>
-   <div class="nav-icon">
-      <span></span>
-      <span></span>
-      <span></span>
-  </div> 
-  <!-- Navigation -->
-  <nav>
-    <ul>
-      <li><a href="#hero"><span data-hover="Inicio">Inicio</span></a></li>
-      <!--<li><a href="#about"><span data-hover="Nosotros">Nosotros</span></a></li>-->
-      <li><a href="#about"><span data-hover="Temario">Temario</span></a></li>
-      <li><a href="#mentores"><span data-hover="Mentores">Mentores</span></a></li>
-      <li><a href="#portfolio"><span data-hover="¿Qué incluye?">¿Qué incluye?</span></a></li>
-      <li><a href="#testimonials"><span data-hover="Testimonios">Testimonios</span></a></li>
-    </ul>
-  </nav>
-</header>
-
-<div class="wrapper">
-
-<!-- SLIDER 
-==================================================-->
-  <div class="hero" id="hero" >
-  <!-- Swiper -->
-  <div class="static-image" >
-    <div class="slider-content">
-      <span>Masterclass: Clases en vivo</span>
-      <h1><strong style="color: #addb1d;">Python</strong> para <br/> ingenieros</h1>
-      <p>Programa en vivo, intensivo y ultra personalizado. <br/><br/>Diseñado para ingenieros que buscan maximizar sus conocimientos sumando la habilidad de tratar datos y automatizar procesos con programación.</p>
-      <p><strong>Duración:</strong> 4 semanas | <strong>Modadlidad:</strong>  Virtual en vivo | <strong>Participantes:</strong> Máximo 10 personas</p>
-    </div>
-    <div class="video-container">
-      <div class="info-container">
-        <iframe src="https://www.youtube.com/embed/Ni6SlemWS1Y" title="Python para Ingenieros" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        <div class="empty-container">*</div>
-        <div class="text-info">
-          <p><strong id="title1">Módulo 1</strong></p>
-          <p><strong>Frecuencia:</strong> Martes y jueves de 7pm a 9pm</p>
-          <p><strong>Inicio: </strong>Del 14/03 al 11/04</p>
-        </div>
-        <div class="text-info">
-  
-          <p><strong id="title2">Módulo 2</strong></p>
-          <p><strong>Frecuencia:</strong>A coordinar</p>
-          <p><strong>Inicio: </strong>A coordinar</p>
-        </div>
-        <div class="prices-container">
-          <div class="price-button">
-            <p class="price-title">1 módulo</p>
-            <p class="price">USD 300.00</p>
-          </div>
-          <div class="price-button">
-            <p class="price-title">2 módulos</p>
-            <p class="price">USD 500.00</p>
-          </div>
-          
-        </div>
-        <div class="descount-info">
-          <p class="descount-title">HASTA EL 04/03</p>
-          <p class="descount">USD 400.00</p>
-          <p class="descount-title">2 módulos</p>
-        </div>
-        <a target="_blank" href="https://wa.me/message/NLMBFZBSKV64M1" rel="noopener noreferrer" id="call-to-action">¡ÚNETE A ESTE MASTERCLASS AHORA!</a>
-
+    <header>
+      <!-- Logo -->
+      <div class="logo">
+        <img src="img/deepskill-logo.png" alt="deep-skill-logo" />
       </div>
-      
-
-    </div>
-    
-  </div>
-  <!-- Social Links -->
-  <div class="social">
-      <a href="https://www.linkedin.com/company/deep-skill/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
-      <a href="https://www.facebook.com/Deep-Skill-Academy-117339758058300" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i></a>
-      <a href="https://wa.me/message/NLMBFZBSKV64M1" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
-      <a href="https://www.instagram.com/deepskill.academy/" target="_blank"><i class="fab fa-instagram" aria-hidden="true"></i>  </a>
-  </div>
-  <!-- Scroll Down -->	
-  <div class="hb-left">
-      <div id="scrolldown" class="text-rotate link"><span>Scroll Down<br />Scroll Down<br />Scroll Down<br />Scroll Down</span></div>
-    </div> 
-</div>
-
-<!-- TEMARIO 
-==================================================-->
-<section id="portfolio" class="services graybg">
-  <div class="container wow fadeInUp">
-    <div class="section-title bottom_15 top_30">
-      <h2 class="title">¿Qué incluye el Programa?</h2>
-      <span>Accesos</span>
-    </div>
-    <!-- Services -->
-    <div class="row">
-      <!-- a service -->
-      <div class="col-lg-4">
-        <div class="service">
-          <img class="d-flex mr-3 icon icon-xl" src="img/svg/time.svg" alt="">
-          <h3 class="second-title">32 horas de masterclass en vivo con Deep Mentor.</h3>
-          <p></p>
-        </div>
+      <div class="nav-icon">
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
-      <!-- a service -->
-      <div class="col-lg-4">
-        <div class="service">
-          <img class="d-flex mr-3 icon icon-xl" src="img/svg/career.svg" alt="20">
-          <h3 class="second-title">8 horas de trabajo de laboratorio 1 a 1 con Buddy.</h3>
-          <p></p>
-        </div>
-      </div>
-      <!-- a service -->
-      <div class="col-lg-4">
-        <div class="service">
-          <img class="d-flex mr-3 icon icon-xl" src="img/svg/interview.svg" alt="">
-          <h3 class="second-title">2 horas de mentoría 1 a 1 con Deep Mentor de tu elección.</h3>
-          <p></p>
-        </div>
-      </div>
-       <!-- a service -->
-      <div class="col-lg-4">
-        <div class="service">
-          <img class="d-flex mr-3 icon icon-xl" src="img/svg/challenge.svg" alt="">
-          <h3 class="second-title">Seguimiento asíncrono durante todo el programa.</h3>
-          <p></p>
-        </div>
-      </div>
-       <!-- a service -->
-      <div class="col-lg-4">
-        <div class="service">
-          <img class="d-flex mr-3 icon icon-xl" src="img/svg/learning-path.svg" alt="">
-          <h3 class="second-title">Ingreso nivel mentee a la comunidad de Discord.</h3>
-          <p></p>
-        </div>
-      </div>
-       <!-- a service -->
-      <div class="col-lg-4">
-        <div class="service">
-          <img class="d-flex mr-3 icon icon-xl" src="img/svg/free-topic.svg" alt="">
-          <h3 class="second-title">Acceso a las grabaciones y material de estudio.</h3>
-          <p></p>
-        </div>
-      </div>
-      
-    </div>
-  </div> <!-- container end-->
-</section>
-
-
-
-<!-- CONTENT OF THE MASTERCLASS
-==================================================-->
-<section id="about" class="about graybg2">
-<div class="container wow fadeInUp">
-  <div class="row">
-    <!-- Left Side -->
-    <div class="col-lg-7 text box-animation">
-      <div class="section-title bottom_15 top_30">
-        <h2 class="title">Contenido del masterclass</h2>
-        <span class="text2">Lo que necesitas saber</span>
-      </div>
-      <p class="text2">Organizamos detalladamente junto a nuestros expertos un plan de estudios que te ayuden a alcanzar tus metas profesionales.</p>
-      
-      <h5 class="text2">Módulo 1: Introducción a  Python</h5>
-        <ul style="margin-left: 20px;">
-          <li>Introducción a Python</li>
-          <li>Estructuras de Control</li>
-          <li>Strings, Listas y Tuplas</li>
-          <li>Diccionarios y Sets</li>
-          <li>Funciones y Módulos</li>
-          <li>Programación funcional</li>
-          <li>Programación orientada a objetos</li>
+      <!-- Navigation -->
+      <nav>
+        <ul>
+          <li>
+            <a href=""><span data-hover="Inicio">Inicio</span></a>
+          </li>
+          <!-- <li>
+            <a href="#about"><span data-hover="About">About</span></a>
+          </li> -->
+          <li>
+            <a href=""><span data-hover="Nosotros">Nosotros</span></a>
+          </li>
+          <li>
+            <a href=""
+              ><span data-hover="For professionals">For professionals</span></a
+            >
+          </li>
+          <li>
+            <a href=""><span data-hover="For companies">For companies</span></a>
+          </li>
+          <li>
+            <a href=""><span data-hover="Contact">Contact</span></a>
+          </li>
         </ul>
+      </nav>
+    </header>
 
-      <h5 class="text2">Módulo 2: Python aplicado a ingeniería</h5>
-        <ul style="margin-left: 20px;">
-          <li>Manejo de Archivos</li>
-          <li>Manejo de APIs</li>
-          <li>Bases de Datos</li>
-          <li>Fundamentos de Álgebra Lineal</li>
-          <li>Regresión Lineal</li>
-        </ul>
-    
-        <a target="_blank" href="https://drive.google.com/file/d/1k2uNB5j2YVcPyl2l1d4ugKJBzL1r452-/view" class="site-btn2 top_30" >REVISA NUESTRO  PROGRAMA AQUÍ</a>
-        
-    </div>
-
-    <!-- Right Side -->
-    <div class="col-lg-5 image d-flex align-items-center">
-      <figure>
-        <img src="img/about.jpeg">
-      </figure>
-    </div>
-    
-    <div class=" contact greenbg container wow fadeInUp">
-    <p class="textsubtitle">Tecnologías utilizadas</p>
-                    <!-- CLIENTS -->
-                    <ul class="bxslider">
-                        <li><img src="img/technologies/1.png" /></li>
-                        <li><img src="img/technologies/2.png" /></li>
-                        <li><img src="img/technologies/3.png" /></li>
-                        <li><img src="img/technologies/4.png" /></li>
-                        <li><img src="img/technologies/5.png" /></li>
-                        <li><img src="img/technologies/6.png" /></li>
-                    </ul>
-    </div>
-</section>
-
-
-<!-- OUR MENTORS
+    <div class="wrapper">
+      <!-- SLIDER 
 ==================================================-->
-<section class="testimonial" id="mentores">
-  <div class="container wow fadeInUp">
-    <div class="section-title bottom_15 top_30">
-      <h2 class="title">¿Quienes te guiarán?</h2>
-      <span>Nuestros mentores</span>
-    </div>
-          <div class="owl-carousel owl-theme testimonials" data-autoplay="false" data-items-desktop="3" data-items-desktop-small="3" data-items-tablet="2" data-items-tablet-small="1" data-margin="30">
-            <!-- a comment -->
-              <div class="item">
-                <div class="outitem">
-                  <figure>
-                    <img src="img/coaches/jean-pierre-mandujano.jpeg" alt="Jean Pierre Mandujano">
-                  </figure>
-                  <div class="name">
-                    <h3 class="title">Jean Pierre Mandujano</h3>
-                    <span>Engineering manager | Founder & CTO de Deep Pit</span>
-                  </div>
-                  <p>Tech Lead de un equipo de +50 ingenieros de software en proyectos de banca con +2.5M usuarios y concurrencia de +150k / minuto.</p>
-                  <p>Open Source Contributor a Spring Projects. Founder & CTO de Deep Pit Technology, desarrollo de software con IA en minería <br/></p>
-                </div>
+      <div class="hero" id="hero">
+        <!-- Swiper -->
+        <div class="swiper-container classic">
+          <div class="swiper-wrapper">
+            <!-- a slide -->
+            <div class="home swiper-slide">
+              <div class="air air1"></div>
+              <div class="air air2"></div>
+              <div class="air air3"></div>
+              <div class="air air4"></div>
+              <div class="slider-content">
+                <!-- <span>More than an agency in</span> -->
+                <h1>
+                  Aquí empieza tu futuro
+                  <strong style="color: #4451ff">tech.</strong>
+                </h1>
+                <a
+                  href="https://mentors.deepskill.space/"
+                  class="site-btn top_30"
+                  style="background-color: #4451ff; margin-right: 15px"
+                  >MENTORS</a
+                >
+                <a
+                  href="https://masterclass.deepskill.space/"
+                  target="_blank"
+                  class="site-btn top_30"
+                  style="
+                    background-color: white;
+                    color: #4451ff;
+                    margin-right: 5px;
+                  "
+                  >MASTERCLASS</a
+                >
               </div>
-              <!-- a comment -->
-              <div class="item">
-                  <div class="outitem">
-                    <figure>
-                      <img src="img/coaches/layla-scheli.jpeg" alt="Layla Scheli">
-                    </figure>
-                    <div class="name">
-                      <h3 class="title">Layla Scheli</h3>
-                      <span>Analista de BI | Big Data | Data Science.</span>
-                    </div>
-                    <p>Software engineer con posgrados en Digital Busisness Management, Marketing digital y Comercio electrónico.</p>
-                    <p>Ex docente y mentora de Data Science en Coderhouse.</p>
-                    <p>Actualmente se desempeña en la Jefatura del Área de Secretaría técnica en IOSPER.</p>
-                  </div>
-                </div>
-                <!-- a comment -->
-              <div class="item">
-                  <div class="outitem">
-                    <figure>
-                      <img src="img/coaches/walter-casas.jpeg" alt="Walter Casas">
-                    </figure>
-                    <div class="name">
-                      <h3 class="title">Walter Casas</h3>
-                      <span>Científico de datos Senior | Visión computacional | PLN | IA Generativa</span>
-                    </div>
-                    <p>Telecommunications  engineer con posgrado en Computer Science.</p>
-                    <p>Experiencia como Software developer, Data Science y Generative AI.</p>
-                    <p>Actualmente se desempeña como Senior Data Science en Stone.</p>
-                  </div>
-                </div>
+            </div>
           </div>
-  </div>
-          <div class=" contact graybg container wow fadeInUp">
-          <p class="textsubtitle2">Nuestros mentores lideraron en:</p>
-                    <!-- CLIENTS -->
-                    <ul class="bxslider">
-                        <li><img src="img/companies/uai-logo.png" /></li>
-                        <li><img src="img/companies/deep-pit-logo.png" /></li>
-                        <li><img src="img/companies/sbp-logo.png" /></li>
-                        <li><img src="img/companies/interbank-logo.png" /></li>
-                        <li><img src="img/companies/coder-house-logo.png" /></li>
-                        <li><img src="img/companies/utec-logo.png" /></li>
-                        <li><img src="img/companies/uni-logo.png" /></li>
-                    </ul>
-            </div>
-</section>
-                  
-<!-- TESTIMONIALS 
-==================================================-->
-<section class="testimonial graybg2" id="testimonials">
-  <div class="container wow fadeInUp">
-    <div class="section-title bottom_15 top_30">
-      <h2 class="title">Testimonios.</h2>
-      <span class="text2">Experiencia de nuestros ex alumnos</span>
-    </div>
-          <div class="owl-carousel owl-theme testimonials" data-autoplay="true" data-items-desktop="3" data-items-desktop-small="3" data-items-tablet="2" data-items-tablet-small="1" data-margin="30">
-            <!-- a comment -->
-              <div class="item">
-                <div class="outitem">
-                  <figure>
-                    <img src="img/coaches/alvaro-salcedo.jpeg" alt="Alvaro Salcedo">
-                  </figure>
-                  <div class="name">
-                    <h3 class="title">Alvaro Salcedo G.</h3>
-                    <span>Ingeniero Ambiental Perú</span>
-                  </div>
-                  <p>"La Masterclass de Deep Skill fue un verdadero punto de inflexión en mi carrera. Aprendí a aplicar técnicas avanzadas de Python, lo cual me permitió automatizar procesos críticos de seguridad en la empresa donde trabajo. Ahora, gracias a lo aprendido en este curso, me destaco como una pieza clave en mi equipo. Recomiendo esta capacitación a todos los que buscan potenciar su impacto en el campo laboral."</p>
-                </div>
-              </div>
-              <!-- a comment -->
-              <div class="item">
-                  <div class="outitem">
-                    <figure>
-                      <img src="img/coaches/francisco-gomez.jpeg" alt="Francisco Gomez">
-                    </figure>
-                    <div class="name">
-                      <h3 class="title">Francisco Gomez Q.</h3>
-                      <span>Ingeniero de Minas Perú</span>
-                    </div>
-                    <p>"Fue una experiencia transformadora. Aprendí a utilizar Python de manera eficiente para optimizar procesos de extracción y análisis de datos en la operación de mi trabajo. Los conocimientos adquiridos me han permitido aplicar simulación de transporte minero y así estimar las colas y esperas en las rutas. ¡No puedo recomendar esta capacitación lo suficiente para aquellos en el campo de la minería!"</p>
-                  </div>
-                </div>
-                <!-- a comment -->
-              <div class="item">
-                  <div class="outitem">
-                   <figure><img src="img/coaches/miguel-gutierrez.jpeg"></figure>
-                    <div class="name">
-                      <h3 class="title">Miguel Gutierrez T.</h3>
-                      <span>Ingeniero Civil Chile</span>
-                    </div>
-                    <p>"Como ingeniero civil, siempre he buscado formas de mejorar los procesos de análisis del peligro sísmico. La Masterclass de Deep Skill me proporcionó las herramientas necesarias para lograrlo. Aprendí a utilizar Python para automatizar tareas repetitivas, analizar grandes volúmenes de datos y optimizar el flujo de trabajo en mis proyectos. Gracias a este curso, he podido destacarme en mi campo y ofrecer soluciones innovadoras a mis clientes."</p>
-                  </div>
-                </div>
-                <!-- a comment -->
-              <div class="item">
-                  <div class="outitem">
-                    <figure><img src="img/coaches/bruno-molina.jpeg"></figure>
-                    <div class="name">
-                      <h3 class="title">Bruno Molina T.</h3>
-                      <span>Ingeniero de Sistemas Argentina</span>
-                    </div>
-                    <p>"Participar en la Masterclass de Deep Skill fue una excelente decisión para mi carrera como ingeniero de sistemas, después del programa pude cambiar de rol a Ingeniero de Datos en una startup prestigiosa. No conozco otro curso con la profundidad y calidad a la que llegan los Deep Mentors."</p>
-                  </div>
-                </div>
-            </div>
-  </div>
-</section>
-
-</div>
-
-<!-- FOOTER 
-================================================== --> 
-<footer>
-  <div class="container">
-    <div class="row">
-      <!-- Copyright -->
-      <div class="col-lg-4 copyright">
-        <a href="index.html"><img src="img/deepskill-logo.png" alt=""></a>
-        <p>© 2024 Deep Skill Software Factory.</p>
-      </div>
-      <!-- Social -->
-      <div class="col-lg-4 ftr-social">
+        </div>
+        <!-- Swiper Container end -->
+        <!-- Social Links -->
         <div class="social">
-          <a target="_blank" href="https://www.linkedin.com/company/deep-skill/"><i class="fab fa-linkedin" aria-hidden="true"></i>  </a>
-          <a target="_blank" href="https://www.facebook.com/Deep-Skill-Academy-117339758058300"><i class="fab fa-facebook"></i>  </a>
-          <a target="_blank" href="https://wa.me/message/NLMBFZBSKV64M1" target="_blank" rel="noopener noreferrer">
-            <i class="fab fa-whatsapp" aria-hidden="true"></i></a>
-          <a target="_blank" href="https://www.instagram.com/deepskill.academy/" target="_blank" rel="noopener noreferrer">
-            <i class="fab fa-instagram" aria-hidden="true"></i>  </a>
+          <a target="_blank" href="https://www.linkedin.com/company/deep-skill/"
+            ><i class="fab fa-linkedin"></i>
+          </a>
+          <a
+            target="_blank"
+            href="https://api.whatsapp.com/message/NLMBFZBSKV64M1?autoload=1&app_absent=0 "
+            ><i class="fab fa-whatsapp" aria-hidden="true"></i>
+          </a>
+          <a target="_blank" href="https://www.instagram.com/deepskill.academy/"
+            ><i class="fab fa-instagram" aria-hidden="true"></i>
+          </a>
+          <a target="_blank" href="https://www.facebook.com/deepskill.la"
+            ><i class="fab fa-facebook" aria-hidden="true"></i>
+          </a>
         </div>
       </div>
-      <!-- Get In Touch -->
-      <div class="col-lg-4 getintouch">
-        <h3 class="title">Escríbenos</h3>
-        <p>contact@deepskill.space</p>
-      </div>
     </div>
-  </div>
-</footer>
 
-<!-- Javascripts -->
-<script src="js/jquery-2.1.4.min.js"></script>
-<script src="js/plugins.js"></script>
-<script src="js/main.js"></script>
+    <!-- FOOTER 
+================================================== -->
 
-</body>
+    <!-- Javascripts -->
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>
