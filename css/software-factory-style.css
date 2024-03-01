@@ -234,7 +234,7 @@ header {
 }
 
 header.fixed {
-  position: fixed;
+  /* position: fixed; */
   background: #000;
 }
 
@@ -490,13 +490,15 @@ header nav ul li a:focus {
 
 .swiper-pagination {
   text-align: left;
+  background: green;
 }
 
 .swiper-container-horizontal > .swiper-pagination-bullets,
 .swiper-pagination-custom,
 .swiper-pagination-fraction {
   bottom: 30px;
-  left: 30px;
+  left: 32%;
+  width: auto;
 }
 
 .swiper-pagination-bullet {
@@ -884,14 +886,14 @@ iframe {
 
 /*------------------ NUESTRO TRABAJO --------------------------*/
 .our-work {
-  height: 90vh !important;
+  height: 100vh !important;
 }
 #slide-1 {
   background: blue;
 }
 #slider-info {
   background: red;
-  height: 90vh;
+  height: 100vh;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -2305,8 +2307,7 @@ footer .getintouch p {
   .swiper-container-horizontal > .swiper-pagination-bullets,
   .swiper-pagination-custom,
   .swiper-pagination-fraction {
-    bottom: 110px;
-    display: none;
+    bottom: 11px;
   }
 
   .hero .social {
