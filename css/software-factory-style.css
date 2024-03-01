@@ -490,14 +490,13 @@ header nav ul li a:focus {
 
 .swiper-pagination {
   text-align: left;
-  background: green;
 }
 
 .swiper-container-horizontal > .swiper-pagination-bullets,
 .swiper-pagination-custom,
 .swiper-pagination-fraction {
   bottom: 30px;
-  left: 32%;
+  left: 45%;
   width: auto;
 }
 
@@ -888,22 +887,24 @@ iframe {
 .our-work {
   height: 100vh !important;
 }
+.our-work h5,.our-work h6{
+color: #ffffff
+}
 #slide-1 {
-  background: blue;
+  background-image: url("../img/software-factory/desktop-driver-background.png");
+  background-repeat: no-repeat;
+  background-size:cover;
 }
 #slider-info {
-  background: red;
   height: 100vh;
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
 }
 #slider-info h1 {
-  font-size: 30px;
+  font-size: 60px;
   padding-left: 20px;
-
-  background: black;
   margin: 0;
 }
 #slider-info span,
@@ -911,10 +912,9 @@ iframe {
   padding-left: 30px;
 }
 .image-container-mobile {
-  background: yellow;
   overflow: hidden;
   position: relative;
-  height: 50vh;
+  height: 60vh;
 }
 .image-container-mobile img {
   width: 100%;
@@ -960,11 +960,14 @@ iframe {
 
 
 .image-container-desktop{
-  background: grey;
   width:100%;
   height: 100%;
   display:flex;
   flex-direction: row;
+}
+.slider-title-subtitle span{
+  background: var(--red) ;
+  color: white;
 }
 .desktop-text-slide{
   font-size:20px
@@ -977,7 +980,7 @@ iframe {
   padding: 2%;
 }
 .image-container-desktop-left{
-  background:red;
+
 }
 
 .users-container{
@@ -993,7 +996,7 @@ iframe {
   object-fit:contain;
 }
 .image-container-desktop-right{
-  background:orange;
+
 }
 .desktop-slide-img-mobile{
   height: 70%;
@@ -1001,7 +1004,6 @@ iframe {
   width:100%;
 }
 .slider-title-subtitle {
-  background: blue;
   margin-top: 15px;
 }
 
@@ -2092,7 +2094,7 @@ footer .getintouch p {
 .site-btn,
 .section-title:before,
 .swiper-pagination-bullet-active {
-  background: #000000;
+  background: var(--red);
 }
 
 .section-title span,
@@ -2155,7 +2157,9 @@ footer .getintouch p {
     margin-top: 0;
     line-height: 20px;
   }
-  
+  .swiper-container-horizontal > .swiper-pagination-bullets{
+  left: 45%;
+  }
 }
 @media screen and (max-width: 1024px) {
   header nav {
@@ -2234,6 +2238,9 @@ footer .getintouch p {
   .news-article .title {
     font-size: 32px;
   }
+  .swiper-container-horizontal > .swiper-pagination-bullets{
+    left: 44%;
+    }
 }
 @media screen and (min-width: 1020px) {
   .image-container-mobile,#slider-info h6,#slider-title-subtitle-our-work {
@@ -2360,6 +2367,9 @@ footer .getintouch p {
     font-size: 30px;
     line-height: 38px;
   }
+  .swiper-container-horizontal > .swiper-pagination-bullets{
+    left: 41%;
+    }
 }
 @media screen and (max-width: 680px) {
   .hero .static-image + .social {
@@ -2467,6 +2477,12 @@ footer .getintouch p {
   .news-article .title {
     font-size: 25px;
   }
+  .swiper-container-horizontal > .swiper-pagination-bullets{
+    left: 35%;
+    }
+    #slider-info h1{
+      font-size: 40px;
+    }
 }
 
 @media screen and (max-width: 320px) {
