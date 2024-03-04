@@ -963,6 +963,7 @@ section {
 
 .about .text p {
   padding-right: 45px;
+  text-align: justify;
 }
 
 .second-title {
@@ -1878,6 +1879,12 @@ footer .getintouch p {
   background: #addb1d;
 }
 
+
+.dark .redbg {
+  background: #FF2323;
+}
+
+
 .dark .graybg2 {
   background: #addb1d;
 }
@@ -1891,7 +1898,7 @@ footer .getintouch p {
 
 .dark .testimonials .outitem {
   background: #191919;
-  height: 80vh;
+  height: 60vh;
 }
 
 .dark .anews {
@@ -1984,7 +1991,7 @@ footer .getintouch p {
 .anews .category,
 .article-comments .comment-content .reply,
 .news-article .category {
-  color: #addb1d;
+  color: #FF2323;
 }
 
 .section-title,
@@ -2009,8 +2016,14 @@ footer .getintouch p {
   margin-top: 40px;
 }
 
+.section-title,
+.text3 {
+  margin-top: 0px;
+  text-align: justify;
+}
+
 .service:hover {
-  background: #addb1d !important;
+  background: #FF2323 !important;
 }
 
 .site-btn:hover {
@@ -2020,6 +2033,11 @@ footer .getintouch p {
 .nav-icon {
   display: none;
 }
+
+.contenedor-imagen {
+  padding: 20px 20px 20px 0; /* Para recortar la imagen si excede las dimensiones */
+}
+
 /*------------------------ Responsive ------------------------*/
 
 @media screen and (min-width: 1680px) {
