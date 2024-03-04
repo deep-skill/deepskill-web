@@ -887,13 +887,14 @@ iframe {
 .our-work {
   height: 100vh !important;
 }
-.our-work h5,.our-work h6{
-color: #ffffff
+.our-work h5,
+.our-work h6 {
+  color: #ffffff;
 }
 #slide-1 {
   background-image: url("../img/software-factory/desktop-driver-background.png");
   background-repeat: no-repeat;
-  background-size:cover;
+  background-size: cover;
 }
 #slider-info {
   height: 100vh;
@@ -916,15 +917,16 @@ color: #ffffff
   position: relative;
   height: 60vh;
 }
+
 .image-container-mobile img {
   width: 100%;
   height: 100%;
-  position: absolute; */
-   top: 0;
-  left: 0; 
+  position: absolute;
+  top: 0;
+  left: 0;
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
-  object-fit:contain;
+  object-fit: contain;
 }
 
 .image-container-mobile img:first-child {
@@ -932,76 +934,76 @@ color: #ffffff
 }
 
 @keyframes imageFade {
-  25% {
-      opacity: 1;
-  }
-  50% {
-      opacity: 0;
-  }
-  75% {
-      opacity: 0;
-  }
+  0%,
   100% {
-      opacity: 1;
+    opacity: 0;
+  }
+  16.66% {
+    opacity: 1;
+  }
+  33.33%,
+  50% {
+    opacity: 1;
+  }
+  66.66%,
+  83.33% {
+    opacity: 0;
   }
 }
 
 .image-container-mobile img:nth-child(1) {
-  animation: imageFade 12s infinite;
+  animation: imageFade 12s infinite 0s;
 }
 
 .image-container-mobile img:nth-child(2) {
-  animation: imageFade 12s infinite 3s;
+  animation: imageFade 12s infinite 4s;
 }
 
 .image-container-mobile img:nth-child(3) {
-  animation: imageFade 12s infinite 6s;
+  animation: imageFade 12s infinite 8s;
 }
-
-
-.image-container-desktop{
-  width:100%;
+.image-container-desktop {
+  width: 100%;
   height: 100%;
-  display:flex;
+  display: flex;
   flex-direction: row;
 }
-.slider-title-subtitle span{
-  background: var(--red) ;
+.slider-title-subtitle span {
+  background: var(--red);
   color: white;
 }
-.desktop-text-slide{
-  font-size:20px
+.desktop-text-slide {
+  font-size: 20px;
 }
-.image-container-desktop-left,.image-container-desktop-right{
-  width:50%;
-  display:flex;
-  flex-direction:column;
+.image-container-desktop-left,
+.image-container-desktop-right {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
   justify-content: space-around;
   padding: 2%;
 }
-.image-container-desktop-left{
-
+.image-container-desktop-left {
 }
 
-.users-container{
-  display:flex;
-  flex-direction:row;
-  width:100%;
-  justify-content:space-around;
-  align-items:center;
-  height: 8%
+.users-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  height: 8%;
 }
-.desktop-slide-img{
+.desktop-slide-img {
   height: 40%;
-  object-fit:contain;
+  object-fit: contain;
 }
-.image-container-desktop-right{
-
+.image-container-desktop-right {
 }
-.desktop-slide-img-mobile{
+.desktop-slide-img-mobile {
   height: 70%;
-  object-fit:contain;
-  width:100%;
+  object-fit: contain;
+  width: 100%;
 }
 .slider-title-subtitle {
   margin-top: 15px;
@@ -2157,8 +2159,8 @@ footer .getintouch p {
     margin-top: 0;
     line-height: 20px;
   }
-  .swiper-container-horizontal > .swiper-pagination-bullets{
-  left: 45%;
+  .swiper-container-horizontal > .swiper-pagination-bullets {
+    left: 45%;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -2238,18 +2240,20 @@ footer .getintouch p {
   .news-article .title {
     font-size: 32px;
   }
-  .swiper-container-horizontal > .swiper-pagination-bullets{
+  .swiper-container-horizontal > .swiper-pagination-bullets {
     left: 44%;
-    }
+  }
 }
 @media screen and (min-width: 1020px) {
-  .image-container-mobile,#slider-info h6,#slider-title-subtitle-our-work {
-    display:none
+  .image-container-mobile,
+  #slider-info h6,
+  #slider-title-subtitle-our-work {
+    display: none;
   }
 }
 @media screen and (max-width: 1020px) {
-  .image-container-desktop{
-    display:none;
+  .image-container-desktop {
+    display: none;
   }
   #hero {
     height: 200vh;
@@ -2367,9 +2371,9 @@ footer .getintouch p {
     font-size: 30px;
     line-height: 38px;
   }
-  .swiper-container-horizontal > .swiper-pagination-bullets{
+  .swiper-container-horizontal > .swiper-pagination-bullets {
     left: 41%;
-    }
+  }
 }
 @media screen and (max-width: 680px) {
   .hero .static-image + .social {
@@ -2477,12 +2481,12 @@ footer .getintouch p {
   .news-article .title {
     font-size: 25px;
   }
-  .swiper-container-horizontal > .swiper-pagination-bullets{
+  .swiper-container-horizontal > .swiper-pagination-bullets {
     left: 35%;
-    }
-    #slider-info h1{
-      font-size: 40px;
-    }
+  }
+  #slider-info h1 {
+    font-size: 40px;
+  }
 }
 
 @media screen and (max-width: 320px) {
