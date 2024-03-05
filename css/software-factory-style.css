@@ -898,10 +898,22 @@ iframe {
 .our-work h6 {
   color: #ffffff;
 }
-#slide-1 {
-  background-image: url("../img/software-factory/desktop-driver-background.png");
+.slide-container {
   background-repeat: no-repeat;
   background-size: cover;
+  width: 100%;
+}
+#slide-1 {
+  background-image: url("../img/software-factory/desktop-driver-background.png");
+}
+#slide-2 {
+  background-image: url("../img/software-factory/deep-pharma/deep-pharma-background.png");
+}
+#slide-3 {
+  background-image: url("../img/software-factory/cambios-jp/cambios-jp-background.png");
+}
+#slide-4 {
+  background-image: url("../img/software-factory/mine-expert/mine-expert-background.png");
 }
 #slider-info {
   height: 100vh;
