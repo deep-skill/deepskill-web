@@ -660,6 +660,12 @@ iframe {
   flex-direction: column;
   justify-content: center;
 }
+.text-info ul {
+  font-size: 15px;
+  color: white;
+}
+.text-info ul li {
+}
 .text-info p {
   font-size: 1rem;
   line-height: 18px;
@@ -669,6 +675,7 @@ iframe {
   color: var(--red);
   font-size: 1.2rem;
 }
+
 .prices-container {
   display: flex;
   flex-direction: row;
@@ -978,7 +985,7 @@ iframe {
 .slide-logo-img {
   height: 10vh;
   object-fit: contain;
-  width: 100%;
+  width: 80%;
 }
 .desktop-text-slide {
   font-size: 20px;
