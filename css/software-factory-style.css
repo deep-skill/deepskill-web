@@ -456,6 +456,13 @@ header nav ul li a:focus {
   opacity: 1;
 }
 
+.slider-content #hero-span {
+  background: white;
+  color: black;
+}
+.slider-content #hero-span:before {
+  top: -20px;
+}
 .hero .static-image .slider-content .site-btn {
   opacity: 1;
 }
@@ -495,7 +502,7 @@ header nav ul li a:focus {
 .swiper-container-horizontal > .swiper-pagination-bullets,
 .swiper-pagination-custom,
 .swiper-pagination-fraction {
-  bottom: 30px;
+  bottom: 10px;
   left: 45%;
   width: auto;
 }
@@ -559,6 +566,9 @@ header nav ul li a:focus {
   display: flex;
   flex-direction: column;
 }
+#slider-info span {
+  padding-left: 20px;
+}
 
 .slider-content h1 {
   color: #fff;
@@ -590,7 +600,6 @@ header nav ul li a:focus {
 }
 
 .slider-content span {
-  background: #fff;
   color: Black;
   padding: 7px;
   font-weight: 700;
@@ -611,7 +620,7 @@ header nav ul li a:focus {
   width: 40px;
   height: 3px;
   position: absolute;
-  top: -17px;
+  top: -95px;
 }
 iframe {
   z-index: 2;
@@ -665,6 +674,7 @@ iframe {
   color: white;
 }
 .text-info ul li {
+  margin-bottom: 10px;
 }
 .text-info p {
   font-size: 1rem;
@@ -705,7 +715,7 @@ iframe {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   height: 15%;
   width: 100%;
 }
@@ -732,6 +742,7 @@ iframe {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 10px 0;
 }
 .site-btn {
   display: inline-block;
@@ -935,6 +946,7 @@ iframe {
   overflow: hidden;
   position: relative;
   height: 60vh;
+  margin-bottom: 15px;
 }
 
 .image-container-mobile img {
@@ -988,8 +1000,7 @@ iframe {
   flex-direction: row;
 }
 .slider-title-subtitle span {
-  background: var(--red);
-  color: white;
+  color: var(--red);
 }
 .slide-logo-img-container {
   display: flex;
@@ -1009,7 +1020,7 @@ iframe {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  padding: 2%;
+  padding: 5%;
 }
 .image-container-desktop-left {
 }
@@ -2197,7 +2208,7 @@ footer .getintouch p {
     font-size: 75px;
   }
   #call-to-action {
-    font-size: 0.7rem !important;
+    font-size: 0.6rem !important;
   }
   .slider-content p {
     margin-top: 0;
@@ -2434,6 +2445,12 @@ footer .getintouch p {
     margin-right: 50px;
     word-space: 3px;
   }
+  #slider-info h6 {
+    font-size: 0.8rem;
+  }
+  .slider-content span:before {
+    top: -70px;
+  }
 }
 @media screen and (max-width: 470px) {
   .slider-content h1 {
@@ -2531,6 +2548,11 @@ footer .getintouch p {
   #slider-info h1 {
     font-size: 40px;
   }
+  #slider-info h6 {
+    font-size: 0.5rem;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
 @media screen and (max-width: 320px) {
@@ -2541,5 +2563,11 @@ footer .getintouch p {
   .slider-content h1 {
     font-size: 40px;
     line-height: 50px;
+  }
+  .slider-content span:before {
+    top: -95px;
+  }
+  #call-to-action {
+    font-size: 0.5rem !important;
   }
 }
