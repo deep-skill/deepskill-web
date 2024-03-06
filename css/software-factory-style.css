@@ -456,6 +456,13 @@ header nav ul li a:focus {
   opacity: 1;
 }
 
+.slider-content #hero-span {
+  background: white;
+  color: black;
+}
+.slider-content #hero-span:before {
+  top: -20px;
+}
 .hero .static-image .slider-content .site-btn {
   opacity: 1;
 }
@@ -495,7 +502,7 @@ header nav ul li a:focus {
 .swiper-container-horizontal > .swiper-pagination-bullets,
 .swiper-pagination-custom,
 .swiper-pagination-fraction {
-  bottom: 30px;
+  bottom: 10px;
   left: 45%;
   width: auto;
 }
@@ -559,6 +566,8 @@ header nav ul li a:focus {
   display: flex;
   flex-direction: column;
 }
+#slider-info span {
+}
 
 .slider-content h1 {
   color: #fff;
@@ -590,7 +599,6 @@ header nav ul li a:focus {
 }
 
 .slider-content span {
-  background: #fff;
   color: Black;
   padding: 7px;
   font-weight: 700;
@@ -611,7 +619,7 @@ header nav ul li a:focus {
   width: 40px;
   height: 3px;
   position: absolute;
-  top: -17px;
+  top: -95px;
 }
 iframe {
   z-index: 2;
@@ -660,6 +668,13 @@ iframe {
   flex-direction: column;
   justify-content: center;
 }
+.text-info ul {
+  font-size: 15px;
+  color: white;
+}
+.text-info ul li {
+  margin-bottom: 10px;
+}
 .text-info p {
   font-size: 1rem;
   line-height: 18px;
@@ -669,6 +684,7 @@ iframe {
   color: var(--red);
   font-size: 1.2rem;
 }
+
 .prices-container {
   display: flex;
   flex-direction: row;
@@ -698,7 +714,7 @@ iframe {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   height: 15%;
   width: 100%;
 }
@@ -725,6 +741,7 @@ iframe {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 10px 0;
 }
 .site-btn {
   display: inline-block;
@@ -891,10 +908,22 @@ iframe {
 .our-work h6 {
   color: #ffffff;
 }
-#slide-1 {
-  background-image: url("../img/software-factory/desktop-driver-background.png");
+.slide-container {
   background-repeat: no-repeat;
   background-size: cover;
+  width: 100%;
+}
+#slide-1 {
+  background-image: url("../img/software-factory/desktop-driver-background.png");
+}
+#slide-2 {
+  background-image: url("../img/software-factory/deep-pharma/deep-pharma-background.png");
+}
+#slide-3 {
+  background-image: url("../img/software-factory/cambios-jp/cambios-jp-background.png");
+}
+#slide-4 {
+  background-image: url("../img/software-factory/mine-expert/mine-expert-background.png");
 }
 #slider-info {
   height: 100vh;
@@ -905,17 +934,16 @@ iframe {
 }
 #slider-info h1 {
   font-size: 60px;
-  padding-left: 20px;
   margin: 0;
 }
 #slider-info span,
 #slider-info h6 {
-  padding-left: 30px;
 }
 .image-container-mobile {
   overflow: hidden;
   position: relative;
   height: 60vh;
+  margin-bottom: 15px;
 }
 
 .image-container-mobile img {
@@ -969,8 +997,7 @@ iframe {
   flex-direction: row;
 }
 .slider-title-subtitle span {
-  background: var(--red);
-  color: white;
+  color: var(--red);
 }
 .slide-logo-img-container {
   display: flex;
@@ -978,7 +1005,6 @@ iframe {
 .slide-logo-img {
   height: 10vh;
   object-fit: contain;
-  width: 100%;
 }
 .desktop-text-slide {
   font-size: 20px;
@@ -990,7 +1016,7 @@ iframe {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  padding: 2%;
+  padding: 5%;
 }
 .image-container-desktop-left {
 }
@@ -2050,6 +2076,7 @@ footer .getintouch p {
 .dark .testimonials .outitem {
   background: #191919;
   height: 60vh;
+  max-height: 420px;
 }
 
 .dark .anews {
@@ -2216,7 +2243,7 @@ h6 {
     font-size: 75px;
   }
   #call-to-action {
-    font-size: 0.7rem !important;
+    font-size: 0.6rem !important;
   }
   .slider-content p {
     margin-top: 0;
@@ -2226,11 +2253,14 @@ h6 {
     left: 45%;
   }
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1024px), (max-height: 600px) {
   header nav {
     visibility: hidden;
     opacity: 0;
     height: 0;
+  }
+  #hero {
+    height: auto;
   }
   .slider-content p {
     margin-top: 0;
@@ -2239,7 +2269,8 @@ h6 {
     display: flex;
     flex-direction: column;
   }
-  .slider-content {
+  #slider-info {
+    padding: 0 2%;
   }
   .hero .static-image .slider-content {
     width: 100%;
@@ -2453,10 +2484,16 @@ h6 {
     margin-right: 50px;
     word-space: 3px;
   }
+  #slider-info h6 {
+    font-size: 0.8rem;
+  }
+  .slider-content span:before {
+    top: -70px;
+  }
 }
 @media screen and (max-width: 470px) {
   .slider-content h1 {
-    font-size: 50px;
+    font-size: 40px;
     line-height: 50px;
     margin-top: 50px;
   }
@@ -2550,6 +2587,11 @@ h6 {
   #slider-info h1 {
     font-size: 40px;
   }
+  #slider-info h6 {
+    font-size: 0.7rem;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
 @media screen and (max-width: 320px) {
@@ -2560,5 +2602,11 @@ h6 {
   .slider-content h1 {
     font-size: 40px;
     line-height: 50px;
+  }
+  .slider-content span:before {
+    top: -95px;
+  }
+  #call-to-action {
+    font-size: 0.5rem !important;
   }
 }
