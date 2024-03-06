@@ -1058,12 +1058,30 @@ iframe {
   padding-top: 30px;
   position: relative;
 }
+ 
+
+
+.section-title2 {
+  padding-top: 0px;
+  position: relative;
+  color: white;
+}
+
 
 .section-title .title {
   font-size: 40px;
   font-weight: 700;
   line-height: 34px;
   letter-spacing: -1px;
+}
+
+.contenedor {
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  text-align: center;
+  padding: 30px !important;
+
 }
 
 .section-title span {
@@ -1082,6 +1100,11 @@ iframe {
 
 section {
   padding: 90px 0;
+}
+
+section2 {
+  padding: 50px 0 !important;
+  background: red;
 }
 
 .graybg {
@@ -2173,7 +2196,22 @@ footer .getintouch p {
 
 .section-title,
 .text3 {
-  margin-top: 0px;
+  font-size: 15px;
+  margin-top: 20px;
+  text-align: justify;
+}
+
+.section-title,
+.text4 {
+  font-size: 15px;
+  text-align: justify;
+}
+
+.section-title,
+h6 {
+  font-weight: bold;
+  color: white;
+  margin-top: 20px;
   text-align: justify;
 }
 
