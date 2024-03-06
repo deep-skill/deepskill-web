@@ -567,7 +567,6 @@ header nav ul li a:focus {
   flex-direction: column;
 }
 #slider-info span {
-  padding-left: 20px;
 }
 
 .slider-content h1 {
@@ -935,12 +934,10 @@ iframe {
 }
 #slider-info h1 {
   font-size: 60px;
-  padding-left: 20px;
   margin: 0;
 }
 #slider-info span,
 #slider-info h6 {
-  padding-left: 30px;
 }
 .image-container-mobile {
   overflow: hidden;
@@ -1008,7 +1005,6 @@ iframe {
 .slide-logo-img {
   height: 10vh;
   object-fit: contain;
-  width: 80%;
 }
 .desktop-text-slide {
   font-size: 20px;
@@ -2057,6 +2053,7 @@ footer .getintouch p {
 .dark .testimonials .outitem {
   background: #191919;
   height: 60vh;
+  max-height: 420px;
 }
 
 .dark .anews {
@@ -2218,11 +2215,14 @@ footer .getintouch p {
     left: 45%;
   }
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1024px), (max-height: 600px) {
   header nav {
     visibility: hidden;
     opacity: 0;
     height: 0;
+  }
+  #hero {
+    height: auto;
   }
   .slider-content p {
     margin-top: 0;
@@ -2231,7 +2231,8 @@ footer .getintouch p {
     display: flex;
     flex-direction: column;
   }
-  .slider-content {
+  #slider-info {
+    padding: 0 2%;
   }
   .hero .static-image .slider-content {
     width: 100%;
@@ -2454,7 +2455,7 @@ footer .getintouch p {
 }
 @media screen and (max-width: 470px) {
   .slider-content h1 {
-    font-size: 50px;
+    font-size: 40px;
     line-height: 50px;
     margin-top: 50px;
   }
@@ -2549,7 +2550,7 @@ footer .getintouch p {
     font-size: 40px;
   }
   #slider-info h6 {
-    font-size: 0.5rem;
+    font-size: 0.7rem;
     padding-left: 20px;
     padding-right: 20px;
   }
