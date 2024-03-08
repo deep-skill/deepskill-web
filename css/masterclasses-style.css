@@ -631,6 +631,7 @@ iframe {
   height: 85%;
   justify-content: space-around;
   margin-right: 15%;
+  margin-top: 5%;
   border: 3px solid var(--text-green-python);
   position: relative;
 }
@@ -639,7 +640,14 @@ iframe {
   position: absolute;
   top: -17px;
   width: 101%;
-  align-text: center;
+  text-align: center;
+  height: 6%;
+  font-weight: bold;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: x-large;
 }
 .info-container > * {
   /* margin-bottom: 30px; */
@@ -1907,7 +1915,7 @@ footer .getintouch p {
 
 .dark .testimonials .outitem {
   background: #191919;
-  height: 80vh;
+  height: 500px;
 }
 
 .dark .anews {
@@ -2250,6 +2258,9 @@ footer .getintouch p {
     font-size: 30px;
     line-height: 38px;
   }
+  .dark .testimonials .outitem {
+    height: 580px;
+  }
 }
 @media screen and (max-width: 680px) {
   .hero .static-image + .social {
@@ -2265,6 +2276,11 @@ footer .getintouch p {
     line-height: 20px;
     margin-right: 50px;
     word-space: 3px;
+  }
+}
+@media screen and (max-width: 580px) {
+  .dark .testimonials .outitem {
+    height: 400px;
   }
 }
 @media screen and (max-width: 470px) {
