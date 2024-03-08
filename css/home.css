@@ -902,11 +902,21 @@ section2 {
   padding-top: 0px;
   padding: 15px 15px;
 }
-
+.counter-container {
+  position: relative;
+}
+.counter-container span {
+  position: absolute;
+  color: white;
+  top: -8px;
+  left: -5px;
+  font-size: xx-large;
+}
 .counter-value {
   font-size: 52px;
   font-weight: 700;
   float: left;
+  margin-left: 5px;
 }
 
 .counter .title {
@@ -1975,8 +1985,15 @@ footer .getintouch p {
   #outitem-companies {
     width: 80%;
   }
+  .counter-container span {
+    top: 7px !important;
+  }
 }
-
+@media screen and (min-width: 768px) {
+  .counter-container span {
+    top: -2px;
+  }
+}
 @media screen and (max-width: 768px) {
   .news-article {
     margin-bottom: 90px;
@@ -2080,6 +2097,13 @@ footer .getintouch p {
   }
   .section-buttons {
     font-size: 10px;
+  }
+}
+@media screen and (min-width: 520px) {
+  .counter-container span {
+    display: flex;
+    justify-content: center;
+    position: relative;
   }
 }
 @media screen and (max-width: 520px) {
