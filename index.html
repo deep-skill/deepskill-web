@@ -1,15 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>  
-<title>MasterClass</title>
+<title>Software Factory</title>
 <meta charset="UTF-8">
 <meta name="description" content="Nebro Portfolio Template">
 <meta name="keywords" content="onepage, portfolio">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5T4WBER4YS"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-5T4WBER4YS');
+</script>
     <!-- Stylesheets -->
     <link rel="stylesheet" href="font/stylesheet.css"/>
-    <link rel="stylesheet" href="css/masterclasses-style.css"/>
+    <link rel="stylesheet" href="css/software-factory-style.css"/>
 
   	<!--[if lt IE 9]>
   	  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -25,11 +33,11 @@
      
 </head> 
 <body class="dark"> 
-
+ 
   <!-- PRELOADER -->
 <div id="preloader">
     <div class="loading-area">
-      <div class="logo"><img src="img/deepskill-logo.png" alt=""></div>
+      <div class="logo"><img src="/img/deepskill-logo.png" alt="deep skill logo"></div>
       <span>loading...</span>
     </div>
     <div class="left-side"></div>
@@ -52,11 +60,10 @@
   <nav>
     <ul>
       <li><a href="#hero"><span data-hover="Inicio">Inicio</span></a></li>
-      <!--<li><a href="#about"><span data-hover="Nosotros">Nosotros</span></a></li>-->
-      <li><a href="#about"><span data-hover="Temario">Temario</span></a></li>
-      <li><a href="#mentores"><span data-hover="Mentores">Mentores</span></a></li>
-      <li><a href="#portfolio"><span data-hover="¿Qué incluye?">¿Qué incluye?</span></a></li>
-      <li><a href="#testimonials"><span data-hover="Testimonios">Testimonios</span></a></li>
+      <li><a href="#our-work"><span data-hover="Nuestro Trabajo">Nuestro Trabajo</span></a></li>
+      <li><a href="#how-we-will-do"><span data-hover="Cómo lo lograremos">Cómo lo lograremos</span></a></li>
+      <li><a href="#why-chose-us"><span data-hover="Por qué elegirnos">Por qué elegirnos</span></a></li>
+      <li><a href="#our-team"><span data-hover="Nuestro equipo">Nuestro equipo</span></a></li>
     </ul>
   </nav>
 </header>
@@ -69,43 +76,31 @@
   <!-- Swiper -->
   <div class="static-image" >
     <div class="slider-content">
-      <span>Masterclass: Clases en vivo</span>
-      <h1><strong style="color: #addb1d;">Python</strong> para <br/> ingenieros</h1>
-      <p>Programa en vivo, intensivo y ultra personalizado. <br/><br/>Diseñado para ingenieros que buscan maximizar sus conocimientos sumando la habilidad de tratar datos y automatizar procesos con programación.</p>
-      <p><strong>Duración:</strong> 4 semanas | <strong>Modadlidad:</strong>  Virtual en vivo | <strong>Participantes:</strong> Máximo 10 personas</p>
+      <span id="hero-span">Software Factory</span>
+      <h1>Desarrollo de <br> <strong style="color: #ff2323;">MVP</strong>en
+        <strong style="background:white;color: black;font-size: 50px;"> 8 SEMANAS*</strong></h1>
+      <p>Prueba tu modelo de negocio con software en producción, rápido y barato. Ten como partner a un equipo experto en tecnologías y métodos de desarrollo, con fuerte foco en MVPs.</p>
+
+      <p><strong>Eficiencia | Calidad | Compromiso</strong></p>
     </div>
     <div class="video-container">
       <div class="info-container">
-        <iframe src="https://www.youtube.com/embed/Ni6SlemWS1Y" title="Python para Ingenieros" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/Q2z7rnIWSQ0?si=EB_1NTQ6s3KI_h7_" title="Deep Skill Software Factory" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         <div class="empty-container">*</div>
         <div class="text-info">
-          <p><strong id="title1">Módulo 1</strong></p>
-          <p><strong>Frecuencia:</strong> Martes y jueves de 7pm a 9pm</p>
-          <p><strong>Inicio: </strong>Del 14/03 al 11/04</p>
-        </div>
-        <div class="text-info">
-  
-          <p><strong id="title2">Módulo 2</strong></p>
-          <p><strong>Frecuencia:</strong>A coordinar</p>
-          <p><strong>Inicio: </strong>A coordinar</p>
-        </div>
-        <div class="prices-container">
-          <div class="price-button">
-            <p class="price-title">1 módulo</p>
-            <p class="price">USD 300.00</p>
-          </div>
-          <div class="price-button">
-            <p class="price-title">2 módulos</p>
-            <p class="price">USD 500.00</p>
-          </div>
-          
+          <p><strong id="title1">Que te ofrecemos:</strong></p>
+          <ul>
+            <li>Método de desarrollo ágil basado en MVPs.</li>
+            <li>Componentes ya creados que puedes reutilizar en tu MVP.</li>
+            <li>Construcción completa, desde los requisitos al software en producción</li>
+            <li>Equipo experto en tecnología con profunda experiencia creando MVPs.</li>
+          </ul>
         </div>
         <div class="descount-info">
-          <p class="descount-title">HASTA EL 04/03</p>
-          <p class="descount">USD 400.00</p>
-          <p class="descount-title">2 módulos</p>
+          <p class="descount">USD 1000.00</p>
+          <p class="descount-title">Por semana</p>
         </div>
-        <a target="_blank" href="https://wa.me/message/NLMBFZBSKV64M1" rel="noopener noreferrer" id="call-to-action">¡ÚNETE A ESTE MASTERCLASS AHORA!</a>
+        <a target="_blank" href="https://api.whatsapp.com/message/NLMBFZBSKV64M1?autoload=1&app_absent=0" id="call-to-action">COTIZA TU MVP CON NOSOTROS</a>
 
       </div>
       
@@ -118,268 +113,428 @@
       <a href="https://www.linkedin.com/company/deep-skill/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
       <a href="https://www.facebook.com/Deep-Skill-Academy-117339758058300" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i></a>
       <a href="https://wa.me/message/NLMBFZBSKV64M1" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
-      <a href="https://www.instagram.com/deepskill.academy/" target="_blank"><i class="fab fa-instagram" aria-hidden="true"></i>  </a>
+      <a href="https://www.instagram.com/deepskill.academy/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram" aria-hidden="true"></i>  </a>
   </div>
   <!-- Scroll Down -->	
   <div class="hb-left">
       <div id="scrolldown" class="text-rotate link"><span>Scroll Down<br />Scroll Down<br />Scroll Down<br />Scroll Down</span></div>
     </div> 
 </div>
-
-<!-- TEMARIO 
+<!-- NUESTRO TRABAJO 
 ==================================================-->
-<section id="portfolio" class="services graybg">
-  <div class="container wow fadeInUp">
-    <div class="section-title bottom_15 top_30">
-      <h2 class="title">¿Qué incluye el Programa?</h2>
-      <span>Accesos</span>
-    </div>
-    <!-- Services -->
-    <div class="row">
-      <!-- a service -->
-      <div class="col-lg-4">
-        <div class="service">
-          <img class="d-flex mr-3 icon icon-xl" src="img/svg/time.svg" alt="">
-          <h3 class="second-title">32 horas de masterclass en vivo con Deep Mentor.</h3>
-          <p></p>
-        </div>
-      </div>
-      <!-- a service -->
-      <div class="col-lg-4">
-        <div class="service">
-          <img class="d-flex mr-3 icon icon-xl" src="img/svg/career.svg" alt="20">
-          <h3 class="second-title">8 horas de trabajo de laboratorio 1 a 1 con Buddy.</h3>
-          <p></p>
-        </div>
-      </div>
-      <!-- a service -->
-      <div class="col-lg-4">
-        <div class="service">
-          <img class="d-flex mr-3 icon icon-xl" src="img/svg/interview.svg" alt="">
-          <h3 class="second-title">2 horas de mentoría 1 a 1 con Deep Mentor de tu elección.</h3>
-          <p></p>
-        </div>
-      </div>
-       <!-- a service -->
-      <div class="col-lg-4">
-        <div class="service">
-          <img class="d-flex mr-3 icon icon-xl" src="img/svg/challenge.svg" alt="">
-          <h3 class="second-title">Seguimiento asíncrono durante todo el programa.</h3>
-          <p></p>
-        </div>
-      </div>
-       <!-- a service -->
-      <div class="col-lg-4">
-        <div class="service">
-          <img class="d-flex mr-3 icon icon-xl" src="img/svg/learning-path.svg" alt="">
-          <h3 class="second-title">Ingreso nivel mentee a la comunidad de Discord.</h3>
-          <p></p>
-        </div>
-      </div>
-       <!-- a service -->
-      <div class="col-lg-4">
-        <div class="service">
-          <img class="d-flex mr-3 icon icon-xl" src="img/svg/free-topic.svg" alt="">
-          <h3 class="second-title">Acceso a las grabaciones y material de estudio.</h3>
-          <p></p>
-        </div>
-      </div>
-      
-    </div>
-  </div> <!-- container end-->
-</section>
+<div class="hero our-work" id="our-work">
+  <!-- Swiper -->
+  <div class="swiper-container classic">
+    <div class="swiper-wrapper">
+      <!-- a slide -->
+      <!-- silver express -->
+      <div id="slide-1" class="slide-container swiper-slide">
+        <div id="slider-info" class="slider-content">
+          <div class="slider-title-subtitle" id="slider-title-subtitle-our-work">
+            <h1 class="title">Silver Express</h1>
+            <span>MVS's realizados</span>
+
+          </div>
+          <div>
+            <div class="image-container-mobile">
+              <!-- <img src="./img/software-factory/silver-mobile.png" alt=""> -->
+              <img src="./img/software-factory/mobile-slide-1.png" alt="mobile1">
+              <img src="./img/software-factory/mobile-slide-2.png" alt="mobile2">
+              <img src="./img/software-factory/mobile-slide-3.png" alt="mobile3"> 
+            </div>
+            <h6>App y plataforma Web desarrolladas para la empresa de servicios de transporte corporativo Silver Express.
+              Transformación digital de la empresa, desde el branding y presencia digital hasta la puesta en producción de su App y plataforma Web.</h6>
+          </div>
+          
+          <div class="image-container-desktop">
+            <div class="image-container-desktop-left">
+              <div class="slider-title-subtitle">
+                <h1>Nuestro Trabajo.</h1>
+                <span>MVS's realizados</span>
+              </div>
+              <div class="slide-logo-img-container">
+                <img class="slide-logo-img" src="./img/software-factory/silver-express-logo.png" alt="silver express logo">
+              </div>
+              <h5 class="desktop-text-slide">App y plataforma Web desarrolladas para la empresa de servicios de transporte corporativo Silver Express.
+                Transformación digital de la empresa, desde el branding y presencia digital hasta la puesta en producción de su App y plataforma Web.</h5>
+              <!-- <div class="users-container">
+                <div class="empresa">d</div>
+                <div class="conductor">s</div>
+                <div class="administrador">d</div>
+              </div> -->
+              <img class="desktop-slide-img" src="./img/software-factory/desktop-slide-computer.png" alt="desktop-slide">
+            </div>
+            <div class="image-container-desktop-right">
+              <img class="desktop-slide-img-mobile" src="./img/software-factory/desktop-slide-mobiles.png" alt="desktop-slide">
+              <ul class="desktop-text-slide" >
+                <li>Plataforma central de administración y monitoreo.</li>
+                <li>Plataforma de administración para sus empresas clientes.</li>
+                <li>App con geolocalización y atención de servicios de transporte para conductores.</li>
+              </ul>
+            </div>
 
 
+          </div>
+        </div>
+        
+      </div>
+      <!-- a slide -->
+      <!-- deep pharma -->
+      <div id="slide-2" class="slide-container swiper-slide">    
+        <div id="slider-info" class="slider-content">
+          <div class="slider-title-subtitle" id="slider-title-subtitle-our-work">
+            <h1>Deep Pharma</h1>
+            <span>MVS's realizados</span>
+
+          </div>
+          <div>
+            <div class="image-container-mobile">
+              <!-- <img src="./img/software-factory/silver-mobile.png" alt=""> -->
+              <img src="./img/software-factory/deep-pharma/mobile-slide-1-deep-pharma.png" alt="mobile deep pharma slide 1">
+              <img src="./img/software-factory/deep-pharma/mobile-slide-2-deep-pharma.png" alt="mobile deep pharma slide 2">
+              <img src="./img/software-factory/deep-pharma/mobile-slide-3-deep-pharma.png" alt="mobile deep pharma slide 3">
+
+            </div>
+            <h6>Desarrollo de MVP para la gestión de farmacias, se construyó Plataforma Web responsiva orientada a atender a propietarios de pequeñas farmacias, así como a su personal de atención al cliente. </h6>
+          </div>
+          
+          <div class="image-container-desktop">
+            <div class="image-container-desktop-left">
+              <div class="slider-title-subtitle">
+                <h1>Nuestro Trabajo.</h1>
+            <span>MVS's realizados</span>
+              </div>
+              <div class="slide-logo-img-container">
+                <img class="slide-logo-img" src="./img/software-factory/deep-pharma/deep-pharma-logo.png" alt="silver express logo">
+              </div>
+              
+              <h5 class="desktop-text-slide">Desarrollo de MVP para la gestión de farmacias, se construyó Plataforma Web responsiva orientada a atender a propietarios de pequeñas farmacias, así como a su personal de atención al cliente. </h5>
+              
+              
+              <!-- <div class="users-container">
+                <div class="empresa">d</div>
+                <div class="conductor">s</div>
+                <div class="administrador">d</div>
+              </div> -->
+              <img class="desktop-slide-img" src="./img/software-factory/deep-pharma/desktop-slide-computer-deep-pharma.png" alt="desktop-slide deep pharma computer">
+            </div>
+            <div class="image-container-desktop-right">
+              <img class="desktop-slide-img-mobile" src="./img/software-factory/deep-pharma/desktop-slide-mobile-deep-pharma.png" alt="desktop-slide deep pharma mobile">
+              <ul class="desktop-text-slide" >
+                <li>Gestión de ventas.</li>
+                <li>Buscador de productos inventariados.</li>
+                <li>Reporte de KPIs del negocio (ventas, incidentes).</li>
+                <li>Control de inventario.</li>
+
+              </ul>
+            </div>
+
+
+          </div>
+        </div>
+        
+      </div>
+      <!-- a slide -->
+      <!-- cambios jp -->
+      <div id="slide-3" class="slide-container swiper-slide">
+        <div id="slider-info" class="slider-content">
+          <div class="slider-title-subtitle" id="slider-title-subtitle-our-work">
+            <h1>Cambios JP</h1>
+            <span>MVS's realizados</span>
+
+          </div>
+          <div>
+            <div class="image-container-mobile">
+              <img src="./img/software-factory/cambios-jp/mobile-slide-1-cambios-jp.png" alt="mobile cambios jp slide 1">
+              <img src="./img/software-factory/cambios-jp/mobile-slide-2-cambios-jp.png" alt="mobile cambios jp slide 2">
+              <img src="./img/software-factory/cambios-jp/mobile-slide-3-cambios-jp.png" alt="mobile cambios jp slide 3">
+
+            </div>
+            <h6>Plataforma Web responsiva para la administración de una casa de cambios (cambio de moneda) digital.
+              Se desarrolló un MVP en 4 semanas que permitió validar la decisión de la transformación digital de la empresa.</h6>
+          </div>
+          
+          <div class="image-container-desktop">
+            <div class="image-container-desktop-left">
+              <div class="slider-title-subtitle">
+                <h1>Nuestro Trabajo.</h1>
+            <span>MVS's realizados</span>
+              </div>
+              <div class="slide-logo-img-container">
+                <img class="slide-logo-img" src="./img/software-factory/cambios-jp/cambios-jp-logo.png" alt="silver express logo">
+              </div>
+              
+              <h5 class="desktop-text-slide">Plataforma Web responsiva para la administración de una casa de cambios (cambio de moneda) digital.
+                Se desarrolló un MVP en 4 semanas que permitió validar la decisión de la transformación digital de la empresa.</h5>
+              <!-- <div class="users-container">
+                <div class="empresa">d</div>
+                <div class="conductor">s</div>
+                <div class="administrador">d</div>
+              </div> -->
+              <img class="desktop-slide-img" src="./img/software-factory/cambios-jp/desktop-slide-computer-cambios-jp.png" alt="desktop-slide cambios jp computer">
+            </div>
+            <div class="image-container-desktop-right">
+              <img class="desktop-slide-img-mobile" src="./img/software-factory/cambios-jp/desktop-slide-mobile-cambios-jp.png" alt="desktop-slide deep pharma mobile">
+              <ul class="desktop-text-slide" >
+                <li>Plataforma central de administración y monitoreo.</li>
+                <li>Plataforma de administración para sus empresas clientes.</li>
+                <li>App con geolocalización y atención de servicios de transporte para conductores.</li>
+              </ul>
+            </div>
+
+
+          </div>
+        </div>
+        
+      </div>
+      <!-- a slide -->
+      <!-- mine expert -->
+      <div id="slide-4" class="slide-container swiper-slide">
+        <div id="slider-info" class="slider-content">
+          <div class="slider-title-subtitle" id="slider-title-subtitle-our-work">
+            <h1>Mine Expert</h1>
+            <span>MVS's realizados</span>
+          </div>
+          <div>
+            <div class="image-container-mobile">
+              <!-- <img src="./img/software-factory/silver-mobile.png" alt=""> -->
+              <img src="./img/software-factory/mine-expert/mobile-slide-1-mine-expert.png" alt="mobile slide mine expert 1">
+              <img src="./img/software-factory/mine-expert/mobile-slide-2-mine-expert.png" alt="mobile slide mine expert 2">
+              <img src="./img/software-factory/mine-expert/mobile-slide-3-mine-expert.png" alt="mobile slide mine expert 3">
+            </div>
+            <h6>Sistema de Data Analysis, managment y productividad para la gestión de datos en tiempo real de una empresa de minería</h6>
+          </div>
+          
+          <div class="image-container-desktop">
+            <div class="image-container-desktop-left">
+              <div class="slider-title-subtitle">
+                <h1>Nuestro Trabajo.</h1>
+            <span>MVS's realizados</span>
+              </div>
+              <div class="slide-logo-img-container">
+                <img class="slide-logo-img" src="./img/software-factory/mine-expert/mine-expert-logo.png" alt="mine expert logo">
+              </div>
+              <h5 class="desktop-text-slide">Sistema de Data Analysis, managment y productividad para la gestión de datos en tiempo real de una empresa de minería</h5>
+              <!-- <div class="users-container">
+                <div class="empresa">d</div>
+                <div class="conductor">s</div>
+                <div class="administrador">d</div>
+              </div> -->
+              <img class="desktop-slide-img" src="./img/software-factory/mine-expert/desktop-slide-computer-mine-expert.png" alt="desktop slide mine expert">
+            </div>
+            <div class="image-container-desktop-right">
+              <img class="desktop-slide-img-mobile" src="./img/software-factory/mine-expert/desktop-slide-mobile-mine-expert.png" alt="desktop-slide">
+              <ul class="desktop-text-slide" >
+                <li>Gestión de datos en tiempo real.</li>
+                <li>Dashboard reactivo.</li>
+                <li>Reporte de KPIs de los procesos.</li>
+                <li>Prevención de errores/pérdidas.</li>
+                
+              </ul>
+            </div>
+
+
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    <!-- Add Pagination -->
+    
+      <div class="swiper-pagination"></div>
+
+    
+  </div>
+  <!-- Swiper Container end -->
+  <!-- Social Links -->
+
+</div>
 
 <!-- CONTENT OF THE MASTERCLASS
 ==================================================-->
-<section id="about" class="about graybg2">
+<section id="how-we-will-do" class="about">
 <div class="container wow fadeInUp">
   <div class="row">
     <!-- Left Side -->
     <div class="col-lg-7 text box-animation">
       <div class="section-title bottom_15 top_30">
-        <h2 class="title">Contenido del masterclass</h2>
-        <span class="text2">Lo que necesitas saber</span>
+        <h2 class="title">¿Cómo lo lograremos?</h2>
+        <span>Nuestro proceso</span>
       </div>
-      <p class="text2">Organizamos detalladamente junto a nuestros expertos un plan de estudios que te ayuden a alcanzar tus metas profesionales.</p>
-      
-      <h5 class="text2">Módulo 1: Introducción a  Python</h5>
-        <ul style="margin-left: 20px;">
-          <li>Introducción a Python</li>
-          <li>Estructuras de Control</li>
-          <li>Strings, Listas y Tuplas</li>
-          <li>Diccionarios y Sets</li>
-          <li>Funciones y Módulos</li>
-          <li>Programación funcional</li>
-          <li>Programación orientada a objetos</li>
-        </ul>
-
-      <h5 class="text2">Módulo 2: Python aplicado a ingeniería</h5>
-        <ul style="margin-left: 20px;">
-          <li>Manejo de Archivos</li>
-          <li>Manejo de APIs</li>
-          <li>Bases de Datos</li>
-          <li>Fundamentos de Álgebra Lineal</li>
-          <li>Regresión Lineal</li>
-        </ul>
-    
-        <a target="_blank" href="https://drive.google.com/file/d/1k2uNB5j2YVcPyl2l1d4ugKJBzL1r452-/view" class="site-btn2 top_30" >REVISA NUESTRO  PROGRAMA AQUÍ</a>
-        
+      <p class="text3">La forma más efectiva de probar un caso de negocio es mediante la implementación y el uso del software con usuarios reales.<br>
+      Utilizamos <b>Lean Inception</b> para alinear los objetivos entre stakeholders y el equipo de tecnología.</p>
+      <p class="tetx3">Acompañamos la etapa de análisis y diseño de la solución con <b>Design Thinking</b> haciendo parte activa a los stakeholder de la solución.<br>
+      Con la solución clara y compartida entre todos, continuamos con el <b>desarrollo ágil,</b> que hace uso de componentes reutilizables.<br>
+      Finalmente desplegamos la solución, con <b>procesos automatizados</b> que nos permiten ser más eficientes.</p>
+      <div class="col-lg-12 image d-flex contenedor-imagen ">
+      <figure>
+        <img src="img/about-2.png">
+      </figure>
+    </div>
     </div>
 
     <!-- Right Side -->
-    <div class="col-lg-5 image d-flex align-items-center">
+    <div class="row col-lg-5 image d-flex align-items-center">
       <figure>
-        <img src="img/about.jpeg">
+        <img src="img/about-3.png">
       </figure>
+      <div>
+        <h6>Sistema de Diseño:</h6>
+          <p class="text4">Al trabajar un sistema de diseño ahorramos mucho tiempo en los diseños UI y su implementación con código.<br> Preferimos material-tailwind, pero podemos adaptarnos a otros sistemas de diseños.</p>
+        <h6>Sistema de autenticacion:</h6>
+          <p class="text4">La seguridad es prioridad para nosotros, así que optamos por Auth0, tecnología que nos habilita un sistema de login, registro y manejo de roles.  </p>
+        <h6>Devops:</h6>
+          <p class="text4">Tenemos prácticas y procesos definidos y automatizados para el mantenimiento e integración de código y despliegue en cloud.<br> Estos importantes temas ya fueron investigados para ti.</p>
+      </div>
     </div>
     
-    <div class=" contact greenbg container wow fadeInUp">
-    <p class="textsubtitle">Tecnologías utilizadas</p>
+   <div class="contact graybg container wow fadeInUp">
+          <p class="textsubtitle2">Tecnologias utilizadas</p>
                     <!-- CLIENTS -->
                     <ul class="bxslider">
-                        <li><img src="img/technologies/1.png" /></li>
-                        <li><img src="img/technologies/2.png" /></li>
-                        <li><img src="img/technologies/3.png" /></li>
-                        <li><img src="img/technologies/4.png" /></li>
-                        <li><img src="img/technologies/5.png" /></li>
-                        <li><img src="img/technologies/6.png" /></li>
+                        <li><img src="img/technologies/flutter-logo.png" /></li>
+                        <li><img src="img/technologies/docker-logo.png" /></li>
+                        <li><img src="img/technologies/nodejs-logo.png" /></li>
+                        <li><img src="img/technologies/postgress-logo.png" /></li>
+                        <li><img src="img/technologies/react-logo.png" /></li>
                     </ul>
-    </div>
+            </div>
 </section>
 
+<!-- TEMARIO 
+==================================================-->
+<section id="why-chose-us" class="services redbg">
+  <div class="container wow fadeInUp">
+    <div class="section-title bottom_15 top_30">
+      <h2 class="title">¿Por qué elergirnos?</h2>
+      <span class="text2">Nuestro diferencial</span>
+    </div>
+    <!-- Services -->
+    <div class="row">
+      <!-- a service -->
+      <div class="col-lg-3">
+        <div class="service">
+          <img class="d-flex mr-3 icon icon-xl" src="img/svg/speed.svg" alt="">
+          <h3 class="second-title">Rapidez</h3>
+          <p>Los MVPs tienen muchas cosas en común, nosotros ya las tenemos construidas. Podemos enfocarnos en el core del negocio y ser más rápidos.</p>
+        </div>
+      </div>
+      <!-- a service -->
+      <div class="col-lg-3">
+        <div class="service">
+          <img class="d-flex mr-3 icon icon-xl" src="img/svg/low-cost.svg" alt="20">
+          <h3 class="second-title">Bajo costo</h3>
+          <p>Fallar barato es la meta. Si construir un MVP sale caro hay un error de definición. <br>Ahorra pagando por un equipo de calidad.</p>
+        </div>
+      </div>
+      <!-- a service -->
+      <div class="col-lg-3">
+        <div class="service">
+          <img class="d-flex mr-3 icon icon-xl" src="img/svg/equipment.svg" alt="20">
+          <h3 class="second-title">Equipo experto</h3>
+          <p>Concéntrate en el modelo de tu negocio, nosotros nos encargamos de la tecnología. <br>¡Sumemos experiencias!</p>
+        </div>
+      </div>
+       <!-- a service -->
+      <div class="col-lg-3">
+        <div class="service">
+          <img class="d-flex mr-3 icon icon-xl" src="img/svg/agile-methods.svg" alt="20">
+          <h3 class="second-title">Métodos ágiles</h3>
+          <p>Somos amantes de la teoría y nos fascina llevarla a la práctica.<br> Aplicamos Lean Inception y Design Thinking en la construcción de tu MVP.</p>
+        </div>
+      </div>
+    </div>
+  </div> <!-- container end-->
+</section>
 
 <!-- OUR MENTORS
 ==================================================-->
-<section class="testimonial" id="mentores">
+<section class="testimonial" id="our-team">
   <div class="container wow fadeInUp">
     <div class="section-title bottom_15 top_30">
-      <h2 class="title">¿Quienes te guiarán?</h2>
-      <span>Nuestros mentores</span>
+      <h2 class="title">Nuestro equipo</h2>
+      <span>Deep Leads</span>
     </div>
           <div class="owl-carousel owl-theme testimonials" data-autoplay="false" data-items-desktop="3" data-items-desktop-small="3" data-items-tablet="2" data-items-tablet-small="1" data-margin="30">
             <!-- a comment -->
               <div class="item">
                 <div class="outitem">
                   <figure>
-                    <img src="img/coaches/jean-pierre-mandujano.jpeg" alt="Jean Pierre Mandujano">
+                    <img src="img/coaches/elvis-capia.jpeg" alt="Elvis Capia">
                   </figure>
                   <div class="name">
-                    <h3 class="title">Jean Pierre Mandujano</h3>
-                    <span>Engineering manager | Founder & CTO de Deep Pit</span>
+                    <h3 class="title">Elvis Capia</h3>
+                    <span>Ingeniero de Software | Científico de Datos | Coach de Programación Competitiva</span>
                   </div>
-                  <p>Tech Lead de un equipo de +50 ingenieros de software en proyectos de banca con +2.5M usuarios y concurrencia de +150k / minuto.</p>
-                  <p>Open Source Contributor a Spring Projects. Founder & CTO de Deep Pit Technology, desarrollo de software con IA en minería <br/></p>
+                  <p>Ingeniero de Software con experiencia en
+                    Ciencia de Datos, Realidad Aumentada y Algoritmos y Estructuras de Datos en empresas internacionales como Google y Meta.</p>
+                  
                 </div>
               </div>
               <!-- a comment -->
               <div class="item">
                   <div class="outitem">
                     <figure>
-                      <img src="img/coaches/layla-scheli.jpeg" alt="Layla Scheli">
+                      <img src="img/coaches/jean-pierre-mandujano.jpeg" alt="Jean Pierre Mandujano">
                     </figure>
                     <div class="name">
-                      <h3 class="title">Layla Scheli</h3>
-                      <span>Analista de BI | Big Data | Data Science.</span>
+                      <h3 class="title">Jean Pierre Mandujano</h3>
+                      <span>Software Engineer | Engineering Manage | CTO</span>
                     </div>
-                    <p>Software engineer con posgrados en Digital Busisness Management, Marketing digital y Comercio electrónico.</p>
-                    <p>Ex docente y mentora de Data Science en Coderhouse.</p>
-                    <p>Actualmente se desempeña en la Jefatura del Área de Secretaría técnica en IOSPER.</p>
+                    <p>Founder & CTO de Deep Pit Technology Engineering Manager en Scotiabank Tech Lead en BCP</p>
+                    <p>Senior Software Engineer en startups como Crehana y Fandango.</p>
                   </div>
                 </div>
                 <!-- a comment -->
               <div class="item">
                   <div class="outitem">
                     <figure>
-                      <img src="img/coaches/walter-casas.jpeg" alt="Walter Casas">
+                      <img src="img/coaches/cristian-llanos.jpeg" alt="Cristian Llanos">
                     </figure>
                     <div class="name">
-                      <h3 class="title">Walter Casas</h3>
-                      <span>Científico de datos Senior | Visión computacional | PLN | IA Generativa</span>
+                      <h3 class="title">Cristian Llanos</h3>
+                      <span>Ingeniero de Software | Arquitecto de Software | Líder de Ingeniería</span>
                     </div>
-                    <p>Telecommunications  engineer con posgrado en Computer Science.</p>
-                    <p>Experiencia como Software developer, Data Science y Generative AI.</p>
-                    <p>Actualmente se desempeña como Senior Data Science en Stone.</p>
+                    <p>Ingeniero de Software Senior. Habilidades DevOps, con gran experiencia en ingeniería  backend con JavaScript y PHP. Mi liderazgo es enfocado en el crecimiento del equipo mediante coaching, mentoring, y feedback continuo.</p>
+                  </div>
+                </div>
+                 <!-- a comment -->
+              <div class="item">
+                  <div class="outitem">
+                    <figure>
+                      <img src="img/coaches/ronald-requena.png" alt="Ronald Requena">
+                    </figure>
+                    <div class="name">
+                      <h3 class="title">Ronald Requena</h3>
+                      <span>Manager de Ingeniería | Ingeniero de Software | Docente y Mentor</span>
+                    </div>
+                    <p>Ingeniero de Software Senior con experiencia como Product Owner en El Banco de Crédito del Perú, Scotiabank y Mi Banco. Docente en la Universidad Ricardo Palma</p>
                   </div>
                 </div>
           </div>
   </div>
-          <div class=" contact graybg container wow fadeInUp">
-          <p class="textsubtitle2">Nuestros mentores lideraron en:</p>
+          <div class="contact graybg container wow fadeInUp">
+          <p class="textsubtitle2">Deep Team</p>
                     <!-- CLIENTS -->
                     <ul class="bxslider">
-                        <li><img src="img/companies/uai-logo.png" /></li>
-                        <li><img src="img/companies/deep-pit-logo.png" /></li>
-                        <li><img src="img/companies/sbp-logo.png" /></li>
-                        <li><img src="img/companies/interbank-logo.png" /></li>
-                        <li><img src="img/companies/coder-house-logo.png" /></li>
-                        <li><img src="img/companies/utec-logo.png" /></li>
-                        <li><img src="img/companies/uni-logo.png" /></li>
+                        <li><img src="img/mentees/carolina-lozano.png" /></li>
+                        <li><img src="img/mentees/milagros-palomino.png" /></li>
+                        <li><img src="img/mentees/roque-molina.png" /></li>
+                        <li><img src="img/mentees/bruno-osuna.png" /></li>
+                        <li><img src="img/mentees/franco-galbiati.png" /></li>
+                        <li><img src="img/mentees/manuel-mandujano.png" /></li>
+                        
                     </ul>
             </div>
 </section>
-                  
-<!-- TESTIMONIALS 
-==================================================-->
-<section class="testimonial graybg2" id="testimonials">
-  <div class="container wow fadeInUp">
-    <div class="section-title bottom_15 top_30">
-      <h2 class="title">Testimonios.</h2>
-      <span class="text2">Experiencia de nuestros ex alumnos</span>
-    </div>
-          <div class="owl-carousel owl-theme testimonials" data-autoplay="true" data-items-desktop="3" data-items-desktop-small="3" data-items-tablet="2" data-items-tablet-small="1" data-margin="30">
-            <!-- a comment -->
-              <div class="item">
-                <div class="outitem">
-                  <figure>
-                    <img src="img/coaches/alvaro-salcedo.jpeg" alt="Alvaro Salcedo">
-                  </figure>
-                  <div class="name">
-                    <h3 class="title">Alvaro Salcedo G.</h3>
-                    <span>Ingeniero Ambiental Perú</span>
-                  </div>
-                  <p>"La Masterclass de Deep Skill fue un verdadero punto de inflexión en mi carrera. Aprendí a aplicar técnicas avanzadas de Python, lo cual me permitió automatizar procesos críticos de seguridad en la empresa donde trabajo. Ahora, gracias a lo aprendido en este curso, me destaco como una pieza clave en mi equipo. Recomiendo esta capacitación a todos los que buscan potenciar su impacto en el campo laboral."</p>
-                </div>
-              </div>
-              <!-- a comment -->
-              <div class="item">
-                  <div class="outitem">
-                    <figure>
-                      <img src="img/coaches/francisco-gomez.jpeg" alt="Francisco Gomez">
-                    </figure>
-                    <div class="name">
-                      <h3 class="title">Francisco Gomez Q.</h3>
-                      <span>Ingeniero de Minas Perú</span>
-                    </div>
-                    <p>"Fue una experiencia transformadora. Aprendí a utilizar Python de manera eficiente para optimizar procesos de extracción y análisis de datos en la operación de mi trabajo. Los conocimientos adquiridos me han permitido aplicar simulación de transporte minero y así estimar las colas y esperas en las rutas. ¡No puedo recomendar esta capacitación lo suficiente para aquellos en el campo de la minería!"</p>
-                  </div>
-                </div>
-                <!-- a comment -->
-              <div class="item">
-                  <div class="outitem">
-                   <figure><img src="img/coaches/miguel-gutierrez.jpeg"></figure>
-                    <div class="name">
-                      <h3 class="title">Miguel Gutierrez T.</h3>
-                      <span>Ingeniero Civil Chile</span>
-                    </div>
-                    <p>"Como ingeniero civil, siempre he buscado formas de mejorar los procesos de análisis del peligro sísmico. La Masterclass de Deep Skill me proporcionó las herramientas necesarias para lograrlo. Aprendí a utilizar Python para automatizar tareas repetitivas, analizar grandes volúmenes de datos y optimizar el flujo de trabajo en mis proyectos. Gracias a este curso, he podido destacarme en mi campo y ofrecer soluciones innovadoras a mis clientes."</p>
-                  </div>
-                </div>
-                <!-- a comment -->
-              <div class="item">
-                  <div class="outitem">
-                    <figure><img src="img/coaches/bruno-molina.jpeg"></figure>
-                    <div class="name">
-                      <h3 class="title">Bruno Molina T.</h3>
-                      <span>Ingeniero de Sistemas Argentina</span>
-                    </div>
-                    <p>"Participar en la Masterclass de Deep Skill fue una excelente decisión para mi carrera como ingeniero de sistemas, después del programa pude cambiar de rol a Ingeniero de Datos en una startup prestigiosa. No conozco otro curso con la profundidad y calidad a la que llegan los Deep Mentors."</p>
-                  </div>
-                </div>
-            </div>
+
+
+  <div class="section2 redbg">
+    <div class="section-title2">
+      <h2 class="contenedor">¿Estás listo para llevar a tu empresa a un siguiente nivel?</h2>
+    </div>                
   </div>
-</section>
+
 
 </div>
 
@@ -417,6 +572,5 @@
 <script src="js/jquery-2.1.4.min.js"></script>
 <script src="js/plugins.js"></script>
 <script src="js/main.js"></script>
-
 </body>
 </html>
