@@ -411,11 +411,21 @@ header nav ul li a:focus {
   height: 100vh;
   margin: 0;
   padding: 0;
-  background-image: url("../img/background-masterclasses.png");
+  background-image: url("../img/background-masterclasses.webp");
   background-repeat: no-repeat;
   background-size: cover;
 }
-
+.whatsappButton {
+  position: fixed;
+  right: 30px;
+  bottom: 50px;
+  width: 60px;
+  z-index: 1000;
+  img {
+    width: 100%;
+    heigth: auto;
+  }
+}
 .hero .social {
   position: absolute;
   z-index: 10;
@@ -610,6 +620,7 @@ header nav ul li a:focus {
   height: 3px;
   position: absolute;
   top: -17px;
+  background: var(--text-green-python) !important;
 }
 iframe {
   z-index: 2;
@@ -621,37 +632,48 @@ iframe {
   justify-content: center;
 }
 .info-container {
-  position: relative;
   z-index: 2;
   width: 47%;
   display: flex;
-  margin-top: 10%;
   background: var(--background-light-grey);
   flex-direction: column;
   align-items: center;
-  height: 69%;
+  height: 85%;
   justify-content: space-around;
   margin-right: 15%;
+  margin-top: 5%;
   border: 3px solid var(--text-green-python);
-  /* padding-bottom: 5%; */
+  position: relative;
+}
+.absolute-title {
+  background-color: var(--text-green-python);
+  position: absolute;
+  top: -17px;
+  width: 101%;
+  text-align: center;
+  height: 6%;
+  font-weight: bold;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .info-container > * {
   /* margin-bottom: 30px; */
 }
 .info-container iframe {
   width: 80%;
-  height: 27%;
-  position: absolute;
-  top: -13%;
+  height: 20%;
+  margin-top: 25px;
   /* position: absolute; */
   /* top: -12%; */
   /* margin: 40px 0 20px 0; */
 }
-.empty-container {
+/* .empty-container {
   width: 85%;
   height: 14%;
   color: var(--background-light-grey);
-}
+} */
 .text-info {
   width: 80%;
   display: flex;
@@ -684,7 +706,7 @@ iframe {
   align-items: center;
 }
 .price-button p {
-  line-height: 0.5rem;
+  line-height: normal;
 }
 .price,
 .price-title {
@@ -718,11 +740,12 @@ iframe {
   width: 85%;
   height: 7%;
   font-weight: bold;
-  font-size: 80% !important;
+  font-size: 60% !important;
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 2%;
 }
 .site-btn {
   display: inline-block;
@@ -746,7 +769,7 @@ iframe {
 
 .site-btn2 {
   background: #000000;
-  color: #ADDB1D;
+  color: #addb1d;
   border: 0;
   padding: 13px 36px;
   font-size: 15px;
@@ -1035,7 +1058,15 @@ section {
   padding-left: 13px;
   padding-top: 20px;
 }
-
+#mentores-title {
+  color: var(--text-green-python);
+}
+#mentores-span {
+  color: white;
+}
+#mentores .container .section-title:before {
+  background: white;
+}
 .testimonials .item {
   text-align: center;
 }
@@ -1043,7 +1074,15 @@ section {
 .owl-theme .owl-nav.disabled + .owl-dots {
   margin-top: 40px;
 }
-
+.testimonial .container .section-title:before {
+  background: white;
+}
+#testimonials-title {
+  color: black;
+}
+#testimonials-span {
+  color: white !important;
+}
 .testimonials .item figure img {
   max-width: 90px;
   margin: 0 auto;
@@ -1087,7 +1126,15 @@ section {
 }
 
 /*------------------------ Portfolio ------------------------*/
-
+#portfolio-section:before {
+  background: white;
+}
+#portfolio-section .title {
+  color: var(--text-green-python);
+}
+#portfolio-section span {
+  color: white;
+}
 .portfolio_filter {
   margin-top: 64px;
   float: right;
@@ -1902,7 +1949,7 @@ footer .getintouch p {
 
 .dark .testimonials .outitem {
   background: #191919;
-  height: 80vh;
+  height: 500px;
 }
 
 .dark .anews {
@@ -2245,6 +2292,9 @@ footer .getintouch p {
     font-size: 30px;
     line-height: 38px;
   }
+  .dark .testimonials .outitem {
+    height: 580px;
+  }
 }
 @media screen and (max-width: 680px) {
   .hero .static-image + .social {
@@ -2260,6 +2310,11 @@ footer .getintouch p {
     line-height: 20px;
     margin-right: 50px;
     word-space: 3px;
+  }
+}
+@media screen and (max-width: 580px) {
+  .dark .testimonials .outitem {
+    height: 460px;
   }
 }
 @media screen and (max-width: 470px) {
