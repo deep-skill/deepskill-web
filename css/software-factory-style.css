@@ -584,6 +584,33 @@ header nav ul li a:focus {
   -o-transform: translateX(100px);
 }
 
+.slider-content .subtitle2 {
+  margin-top: 30px;
+  color: #fff;
+  line-height: normal;
+  font-family: Poppins;
+  font-size: 35px;
+  font-weight: 600;
+  text-align: justify;
+  transform: translateX(100px);
+  -webkit-transform: translateX(100px);
+}
+
+.slider-content .small-letters  {
+  color: #fff;
+  font-family: Poppins-Regular;
+  font-size: 10px;
+  text-align: justify;
+  padding-bottom: 20px;
+  width: 80%;
+  transform: translateX(100px);
+  -webkit-transform: translateX(100px);
+  -moz-transform: translateX(100px);
+  -ms-transform: translateX(100px);
+  -o-transform: translateX(100px);
+}
+
+
 .slider-content p {
   color: #fff;
   font-family: Poppins-Regular;
@@ -1007,7 +1034,10 @@ iframe {
   object-fit: contain;
 }
 .desktop-text-slide {
-  font-size: 20px;
+  margin-top: 10px;
+  line-height: normal;
+  font-size: 18px;
+  font-weight:normal;
   color: white;
 }
 .image-container-desktop-left,
@@ -2250,6 +2280,7 @@ h6 {
     left: 45%;
   }
 }
+
 @media screen and (min-width: 1025px) and (max-height: 600px) {
   #slider-info {
     height: auto;
@@ -2620,4 +2651,12 @@ h6 {
   #call-to-action {
     font-size: 0.5rem !important;
   }
+}
+
+@media screen and (max-width: 750px) {
+  .slider-content .subtitle2 {
+    font-size: 30px;
+    text-align: center;
+    line-height: normal;
+
 }
