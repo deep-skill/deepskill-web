@@ -827,6 +827,7 @@ section2 {
 /*------------------------ About Section Css ------------------------*/
 
 .site-btn-2 {
+  margin-top: 20px;
   background-color: #4451ff;
   display: inline-block;
   border: 0;
