@@ -647,7 +647,6 @@ iframe {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: x-large;
 }
 .info-container > * {
   /* margin-bottom: 30px; */
@@ -731,11 +730,12 @@ iframe {
   width: 85%;
   height: 7%;
   font-weight: bold;
-  font-size: 80% !important;
+  font-size: 60% !important;
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 2%;
 }
 .site-btn {
   display: inline-block;
