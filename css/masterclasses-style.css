@@ -411,7 +411,7 @@ header nav ul li a:focus {
   height: 100vh;
   margin: 0;
   padding: 0;
-  background-image: url("../img/background-masterclasses.png");
+  background-image: url("../img/background-masterclasses.webp");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -706,7 +706,7 @@ iframe {
   align-items: center;
 }
 .price-button p {
-  line-height: 0.5rem;
+  line-height: normal;
 }
 .price,
 .price-title {
@@ -1074,7 +1074,15 @@ section {
 .owl-theme .owl-nav.disabled + .owl-dots {
   margin-top: 40px;
 }
-
+.testimonial .container .section-title:before {
+  background: white;
+}
+#testimonials-title {
+  color: black;
+}
+#testimonials-span {
+  color: white !important;
+}
 .testimonials .item figure img {
   max-width: 90px;
   margin: 0 auto;
@@ -1121,7 +1129,12 @@ section {
 #portfolio-section:before {
   background: white;
 }
-
+#portfolio-section .title {
+  color: var(--text-green-python);
+}
+#portfolio-section span {
+  color: white;
+}
 .portfolio_filter {
   margin-top: 64px;
   float: right;
