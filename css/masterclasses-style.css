@@ -415,7 +415,17 @@ header nav ul li a:focus {
   background-repeat: no-repeat;
   background-size: cover;
 }
-
+.whatsappButton {
+  position: fixed;
+  right: 30px;
+  bottom: 50px;
+  width: 60px;
+  z-index: 1000;
+  img {
+    width: 100%;
+    heigth: auto;
+  }
+}
 .hero .social {
   position: absolute;
   z-index: 10;
@@ -610,6 +620,7 @@ header nav ul li a:focus {
   height: 3px;
   position: absolute;
   top: -17px;
+  background: var(--text-green-python) !important;
 }
 iframe {
   z-index: 2;
@@ -619,7 +630,6 @@ iframe {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: blue;
 }
 .info-container {
   z-index: 2;
@@ -1048,7 +1058,15 @@ section {
   padding-left: 13px;
   padding-top: 20px;
 }
-
+#mentores-title {
+  color: var(--text-green-python);
+}
+#mentores-span {
+  color: white;
+}
+#mentores .container .section-title:before {
+  background: white;
+}
 .testimonials .item {
   text-align: center;
 }
@@ -1100,6 +1118,9 @@ section {
 }
 
 /*------------------------ Portfolio ------------------------*/
+#portfolio-section:before {
+  background: white;
+}
 
 .portfolio_filter {
   margin-top: 64px;
@@ -2280,7 +2301,7 @@ footer .getintouch p {
 }
 @media screen and (max-width: 580px) {
   .dark .testimonials .outitem {
-    height: 400px;
+    height: 460px;
   }
 }
 @media screen and (max-width: 470px) {
