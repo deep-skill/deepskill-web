@@ -411,7 +411,7 @@ header nav ul li a:focus {
   height: 100vh;
   margin: 0;
   padding: 0;
-  background-image: url("../img/background-masterclasses.png");
+  background-image: url("../img/background-masterclasses.webp");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -484,7 +484,17 @@ header nav ul li a:focus {
   color: #fff;
   font-size: 15px;
 }
-
+.whatsappButton {
+  position: fixed;
+  right: 30px;
+  bottom: 60px;
+  width: 60px;
+  z-index: 1000;
+img {
+  width: 100%;
+  heigth: auto;
+}
+}
 .swiper-slide:before {
   content: "";
   position: absolute;
