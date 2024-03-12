@@ -566,7 +566,7 @@ header nav ul li a:focus {
   display: flex;
   flex-direction: column;
 }
-#slider-info span {
+.slider-info span {
 }
 
 .slider-content h1 {
@@ -952,19 +952,19 @@ iframe {
 #slide-4 {
   background-image: url("../img/software-factory/mine-expert/mine-expert-background.webp");
 }
-#slider-info {
+.slider-info{
   height: 100vh;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-#slider-info h1 {
+.slider-info h1 {
   font-size: 60px;
   margin: 0;
 }
-#slider-info span,
-#slider-info h6 {
+.slider-info span,
+.slider-info h6 {
 }
 .image-container-mobile {
   overflow: hidden;
@@ -2282,12 +2282,13 @@ h6 {
 }
 
 @media screen and (min-width: 1025px) and (max-height: 600px) {
-  #slider-info {
+  .slider-info{
     height: auto;
   }
   .our-work {
     height: auto !important;
   }
+
 }
 @media screen and (max-width: 1024px), (max-height: 600px) {
   header nav {
@@ -2305,7 +2306,7 @@ h6 {
     display: flex;
     flex-direction: column;
   }
-  #slider-info {
+  .slider-info{
     padding: 0 2%;
   }
   .hero .static-image .slider-content {
@@ -2376,7 +2377,7 @@ h6 {
 }
 @media screen and (min-width: 1020px) {
   .image-container-mobile,
-  #slider-info h6,
+  .slider-info h6,
   #slider-title-subtitle-our-work {
     display: none;
   }
@@ -2520,7 +2521,7 @@ h6 {
     margin-right: 50px;
     word-space: 3px;
   }
-  #slider-info h6 {
+  .slider-info h6 {
     font-size: 0.8rem;
   }
   .slider-content span:before {
@@ -2620,10 +2621,10 @@ h6 {
   .swiper-container-horizontal > .swiper-pagination-bullets {
     left: 35%;
   }
-  #slider-info h1 {
+  .slider-info h1 {
     font-size: 40px;
   }
-  #slider-info h6 {
+  .slider-info h6 {
     font-size: 0.7rem;
     padding-left: 20px;
     padding-right: 20px;
