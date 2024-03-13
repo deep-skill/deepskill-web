@@ -736,11 +736,11 @@ iframe {
   background: var(--text-green-python);
   color: black;
   border-radius: 20px;
-  font-size: 1rem !important;
-  width: 85%;
-  height: 7%;
+  /* font-size: 1rem !important; */
+  width: 88%;
+  height: 6%;
   font-weight: bold;
-  font-size: 60% !important;
+  font-size: 88% !important;
   text-align: center;
   display: flex;
   align-items: center;
@@ -2085,18 +2085,44 @@ footer .getintouch p {
     width: 1250px;
   }
 }
+
+
+
+@media screen and (min-width: 1256px) {
+  #call-to-action {
+    font-size: 13px !important;
+    height: 5%;
+  }
+}
+
 @media screen and (max-width: 1255px) {
   .slider-content h1 {
     font-size: 75px;
   }
   #call-to-action {
-    font-size: 0.7rem !important;
+    font-size: 11px !important;
+    height: 3%;
   }
   .slider-content p {
     margin-top: 0;
     line-height: 20px;
   }
 }
+
+@media screen and (max-width: 1066px) {
+  #call-to-action {
+    font-size: 10px !important;
+    height: 3%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  #call-to-action {
+    font-size: 13px !important;
+    height: 4%;
+  }
+}
+
 @media screen and (max-width: 1024px) {
   header nav {
     visibility: hidden;
