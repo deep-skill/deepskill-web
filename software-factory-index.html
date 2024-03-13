@@ -88,25 +88,23 @@
             <a href="#hero"><span data-hover="Inicio">Inicio</span></a>
           </li>
           <li>
-            <a href="#our-work"
-              ><span data-hover="Nuestro Trabajo">Nuestro Trabajo</span></a
+            <a href="#our-team"
+              ><span data-hover="Nuestro Trabajo">Nuestro Equipo</span></a
             >
           </li>
           <li>
-            <a href="#how-we-will-do"
-              ><span data-hover="Cómo lo lograremos"
-                >Cómo lo lograremos</span
-              ></a
+            <a
+              href="https://deepskill.space/#for-companies"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><span data-hover="Para empresas">Para empresas</span></a
             >
           </li>
           <li>
             <a href="#why-chose-us"
-              ><span data-hover="Por qué elegirnos">Por qué elegirnos</span></a
-            >
-          </li>
-          <li>
-            <a href="#our-team"
-              ><span data-hover="Nuestro equipo">Nuestro equipo</span></a
+              ><span data-hover="Para profesionales"
+                >Para profesionales</span
+              ></a
             >
           </li>
         </ul>
@@ -121,17 +119,17 @@
         <div class="static-image">
           <div class="slider-content">
             <span id="hero-span">Software Factory</span>
-            <h1>
+            <h1 id="hero-title-h1">
               Desarrollo de <br />
-              <strong style="color: #ff2323">MVP</strong>en
-              <strong style="background: white; color: black; font-size: 50px">
-                8 SEMANAS*</strong
+              <strong style="color: #ff2323">MVP</strong>
+              <strong style="background: white; color: black; font-size: 50px"
+                >EN 8 SEMANAS*</strong
               >
             </h1>
-            <p class="small-letters">
+            <p id="hero-small-letters" class="small-letters">
               *El tiempo podría variar según requerimientos
             </p>
-            <p>
+            <p id="hero-small-paragraph">
               Prueba tu modelo de negocio con software en producción, rápido y
               barato. Ten como partner a un equipo experto en tecnologías y
               métodos de desarrollo, con fuerte foco en MVPs.
@@ -142,6 +140,7 @@
           <div class="video-container">
             <div class="info-container">
               <iframe
+                id="video"
                 src="https://www.youtube.com/embed/Q2z7rnIWSQ0?si=EB_1NTQ6s3KI_h7_"
                 title="Deep Skill Software Factory"
                 frameborder="0"
@@ -150,7 +149,7 @@
               ></iframe>
               <div class="empty-container">*</div>
               <div class="text-info">
-                <p><strong id="title1">Que te ofrecemos:</strong></p>
+                <p><strong id="title1">Lo que te ofrecemos:</strong></p>
                 <ul>
                   <li>Método de desarrollo ágil basado en MVPs.</li>
                   <li>
@@ -239,7 +238,7 @@
                   id="slider-title-subtitle-our-work"
                 >
                   <h1 class="title">Silver Express</h1>
-                  <span>MVS's realizados</span>
+                  <span>MVP's realizados</span>
                 </div>
                 <div>
                   <div class="image-container-mobile">
@@ -269,7 +268,7 @@
                   <div class="image-container-desktop-left">
                     <div class="slider-title-subtitle">
                       <h1>Nuestro Trabajo.</h1>
-                      <span>MVS's realizados</span>
+                      <span>MVP's realizados</span>
                     </div>
                     <div class="slide-logo-img-container">
                       <img
@@ -322,7 +321,7 @@
                   id="slider-title-subtitle-our-work"
                 >
                   <h1>Deep Pharma</h1>
-                  <span>MVS's realizados</span>
+                  <span>MVP's realizados</span>
                 </div>
                 <div>
                   <div class="image-container-mobile">
@@ -351,7 +350,7 @@
                   <div class="image-container-desktop-left">
                     <div class="slider-title-subtitle">
                       <h1>Nuestro Trabajo.</h1>
-                      <span>MVS's realizados</span>
+                      <span>MVP's realizados</span>
                     </div>
                     <div class="slide-logo-img-container">
                       <img
@@ -367,12 +366,6 @@
                       propietarios de pequeñas farmacias, así como a su personal
                       de atención al cliente.
                     </h5>
-
-                    <!-- <div class="users-container">
-                <div class="empresa">d</div>
-                <div class="conductor">s</div>
-                <div class="administrador">d</div>
-              </div> -->
                     <img
                       class="desktop-slide-img"
                       src="./img/software-factory/deep-pharma/desktop-slide-computer-deep-pharma.webp"
@@ -404,7 +397,7 @@
                   id="slider-title-subtitle-our-work"
                 >
                   <h1>Cambios JP</h1>
-                  <span>MVS's realizados</span>
+                  <span>MVP's realizados</span>
                 </div>
                 <div>
                   <div class="image-container-mobile">
@@ -433,7 +426,7 @@
                   <div class="image-container-desktop-left">
                     <div class="slider-title-subtitle">
                       <h1>Nuestro Trabajo.</h1>
-                      <span>MVS's realizados</span>
+                      <span>MVP's realizados</span>
                     </div>
                     <div class="slide-logo-img-container">
                       <img
@@ -490,7 +483,7 @@
                   id="slider-title-subtitle-our-work"
                 >
                   <h1>Mine Expert</h1>
-                  <span>MVS's realizados</span>
+                  <span>MVP's realizados</span>
                 </div>
                 <div>
                   <div class="image-container-mobile">
@@ -517,7 +510,7 @@
                   <div class="image-container-desktop-left">
                     <div class="slider-title-subtitle">
                       <h1>Nuestro Trabajo.</h1>
-                      <span>MVS's realizados</span>
+                      <span>MVP's realizados</span>
                     </div>
                     <div class="slide-logo-img-container">
                       <img
@@ -570,7 +563,7 @@
           </div>
           <!-- Add Pagination -->
 
-          <div class="swiper-pagination"></div>
+          <div id="pagination-container" class="swiper-pagination"></div>
         </div>
         <!-- Swiper Container end -->
         <!-- Social Links -->
@@ -970,4 +963,3 @@
     <script src="js/main.js"></script>
   </body>
 </html>
-
