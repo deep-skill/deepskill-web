@@ -707,6 +707,10 @@ iframe {
   height: 30%;
   position: absolute;
   top: -13%;
+  z-index: 9999;
+}
+#player {
+  transition: all 0.5s ease;
 }
 .video-fullscreen {
   width: 70% !important;
@@ -715,6 +719,15 @@ iframe {
   top: 50% !important;
   left: 50%;
   transform: translate(-50%, -50%);
+  z-index: 9999;
+}
+#player-close-button {
+  display: none;
+}
+.player-close-button-style {
+  position: fixed;
+  top: 12%;
+  right: 12%;
   z-index: 9999;
 }
 .empty-container {

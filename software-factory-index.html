@@ -85,7 +85,7 @@
       <nav>
         <ul>
           <li>
-            <a href="#hero"><span data-hover="Inicio">Inicio</span></a>
+            <a href="#hero"><span data-hover="Inicio">Inicio </span></a>
           </li>
           <li>
             <a href="#our-team"
@@ -139,14 +139,20 @@
           </div>
           <div class="video-container">
             <div class="info-container">
-              <iframe
+              <div id="player"></div>
+              <button id="player-close-button">
+                <i class="fas fa-times"></i>
+              </button>
+
+              <!-- <iframe
                 id="video"
                 src="https://www.youtube.com/embed/Q2z7rnIWSQ0?si=EB_1NTQ6s3KI_h7_"
                 title="Deep Skill Software Factory"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowfullscreen
-              ></iframe>
+              ></iframe> -->
+
               <div class="empty-container">*</div>
               <div class="text-info">
                 <p><strong id="title1">Lo que te ofrecemos:</strong></p>
@@ -960,6 +966,8 @@
     <!-- Javascripts -->
     <script src="js/jquery-2.1.4.min.js"></script>
     <script src="js/plugins.js"></script>
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="js/video.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
