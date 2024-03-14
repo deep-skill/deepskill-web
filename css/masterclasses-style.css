@@ -620,7 +620,7 @@ header nav ul li a:focus {
   height: 3px;
   position: absolute;
   top: -17px;
-  background: var(--text-green-python) !important;
+  background: #4451FF !important;
 }
 iframe {
   z-index: 2;
@@ -642,18 +642,18 @@ iframe {
   justify-content: space-around;
   margin-right: 15%;
   margin-top: 5%;
-  border: 3px solid var(--text-green-python);
+  border: 3px solid #4451FF;
   position: relative;
 }
 .absolute-title {
-  background-color: var(--text-green-python);
+  background-color: #4451FF;
   position: absolute;
   top: -17px;
   width: 101%;
   text-align: center;
   height: 6%;
   font-weight: bold;
-  color: black;
+  color: white;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -686,7 +686,7 @@ iframe {
 }
 #title1,
 #title2 {
-  color: var(--text-green-python);
+  color: #4451FF;
   font-size: 1.2rem;
 }
 .prices-container {
@@ -710,7 +710,7 @@ iframe {
 }
 .price,
 .price-title {
-  color: var(--text-green-python) !important;
+  color: #4451FF !important;
   margin: 5% 0;
 }
 .descount-info {
@@ -725,7 +725,7 @@ iframe {
 .descount-info p {
   padding: 0;
   margin: 0;
-  color: var(--text-green-python) !important;
+  color: #4451FF !important;
   line-height: 1.2rem;
   font-weight: bold;
 }
@@ -733,14 +733,14 @@ iframe {
   font-size: 1.8rem;
 }
 #call-to-action {
-  background: var(--text-green-python);
-  color: black;
+  background: #4451FF;
+  color: white;
   border-radius: 20px;
-  font-size: 1rem !important;
-  width: 85%;
-  height: 7%;
+  /* font-size: 1rem !important; */
+  width: 88%;
+  height: 6%;
   font-weight: bold;
-  font-size: 60% !important;
+  font-size: 88% !important;
   text-align: center;
   display: flex;
   align-items: center;
@@ -768,8 +768,8 @@ iframe {
 }
 
 .site-btn2 {
-  background: #000000;
-  color: #addb1d;
+  background: #4451FF;
+  color: white;
   border: 0;
   padding: 13px 36px;
   font-size: 15px;
@@ -1059,10 +1059,10 @@ section {
   padding-top: 20px;
 }
 #mentores-title {
-  color: var(--text-green-python);
+  color: white;
 }
 #mentores-span {
-  color: white;
+  color: #4451FF;
 }
 #mentores .container .section-title:before {
   background: white;
@@ -1078,10 +1078,10 @@ section {
   background: white;
 }
 #testimonials-title {
-  color: black;
+  color: white;
 }
 #testimonials-span {
-  color: white !important;
+  color: #4451FF !important;
 }
 .testimonials .item figure img {
   max-width: 90px;
@@ -1121,6 +1121,16 @@ section {
   -o-border-radius: 8px;
 }
 
+.testimonials .outitem2 {
+  background: #efefef;
+  padding: 40px;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
 .testimonials {
   padding: 30px 0;
 }
@@ -1133,7 +1143,7 @@ section {
   color: var(--text-green-python);
 }
 #portfolio-section span {
-  color: white;
+  color: #4451FF;
 }
 .portfolio_filter {
   margin-top: 64px;
@@ -1932,12 +1942,12 @@ footer .getintouch p {
   background: #000;
 }
 
-.dark .greenbg {
-  background: #addb1d;
+.dark .bluebg {
+  background: #4451FF;
 }
 
 .dark .graybg2 {
-  background: #addb1d;
+  background: #191919;
 }
 .dark .graybg .service {
   background: #292929;
@@ -1949,6 +1959,11 @@ footer .getintouch p {
 
 .dark .testimonials .outitem {
   background: #191919;
+  height: 500px;
+}
+
+.dark .testimonials .outitem2 {
+  background: #000;
   height: 500px;
 }
 
@@ -2042,18 +2057,33 @@ footer .getintouch p {
 .anews .category,
 .article-comments .comment-content .reply,
 .news-article .category {
-  color: #addb1d;
+  color: #4451FF;
 }
 
 .section-title,
 .text2 {
-  margin-top: 10px;
-  color: #000000 !important;
+  margin-top: 20px;
+  color: white !important;
 }
 
 .section-title,
+.text3 {
+  font-size: 13px;
+  margin-bottom: 10px;
+  font-weight: normal;
+  margin-top: 10px;
+  color: white !important;
+}
+
+.section-title,
+.text3 li {
+  margin-bottom: 5px;
+}
+
+
+.section-title,
 .textsubtitle {
-  color: black !important;
+  color: white !important;
   font-weight: 600;
   margin: 0;
   margin-top: 40px;
@@ -2068,7 +2098,7 @@ footer .getintouch p {
 }
 
 .service:hover {
-  background: #addb1d !important;
+  background: #4451FF !important;
 }
 
 .site-btn:hover {
@@ -2085,18 +2115,44 @@ footer .getintouch p {
     width: 1250px;
   }
 }
+
+
+
+@media screen and (min-width: 1256px) {
+  #call-to-action {
+    font-size: 13px !important;
+    height: 5%;
+  }
+}
+
 @media screen and (max-width: 1255px) {
   .slider-content h1 {
     font-size: 75px;
   }
   #call-to-action {
-    font-size: 0.7rem !important;
+    font-size: 11px !important;
+    height: 3%;
   }
   .slider-content p {
     margin-top: 0;
     line-height: 20px;
   }
 }
+
+@media screen and (max-width: 1066px) {
+  #call-to-action {
+    font-size: 10px !important;
+    height: 3%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  #call-to-action {
+    font-size: 13px !important;
+    height: 4%;
+  }
+}
+
 @media screen and (max-width: 1024px) {
   header nav {
     visibility: hidden;
@@ -2295,6 +2351,9 @@ footer .getintouch p {
   .dark .testimonials .outitem {
     height: 580px;
   }
+  .dark .testimonials .outitem2 {
+    height: 580px;
+  }
 }
 @media screen and (max-width: 680px) {
   .hero .static-image + .social {
@@ -2314,6 +2373,11 @@ footer .getintouch p {
 }
 @media screen and (max-width: 580px) {
   .dark .testimonials .outitem {
+    height: 460px;
+  }
+}
+@media screen and (max-width: 580px) {
+  .dark .testimonials .outitem2 {
     height: 460px;
   }
 }
