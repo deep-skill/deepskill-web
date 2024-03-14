@@ -707,20 +707,22 @@ iframe {
   height: 30%;
   position: absolute;
   top: -13%;
-  z-index: 9999;
+  z-index: 9000;
 }
 #player {
   transition: all 0.5s ease;
 }
 .video-fullscreen {
-  width: 70% !important;
-  height: 70vh !important;
+  /* width: 70%;
+  height: 70vh; */
   position: fixed !important;
   top: 50% !important;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 9999;
+  filter: none;
 }
+
 #player-close-button {
   display: none;
 }
@@ -729,6 +731,20 @@ iframe {
   top: 12%;
   right: 12%;
   z-index: 9999;
+  font-size: 20px;
+  background: transparent;
+}
+
+.material-symbols-outlined {
+  color: red;
+  border: 1px solid red;
+  border-radius: 50%;
+}
+.material-symbols-outlined:hover {
+  cursor: pointer;
+}
+.filter {
+  background-filter: blur(10px);
 }
 .empty-container {
   width: 85%;
