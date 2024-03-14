@@ -73,7 +73,8 @@ function resizeVideo() {
       (windowHeight * screenPorcentageOcupped * playerOriginalWidth) /
       playerOriginalHeight;
   }
-
+  closeButton.style.bottom = playerWidth * 1.1 + "px";
+  closeButton.style.left = playerWidth * 1.25 + "px";
   video.style.width = playerWidth + "px";
   video.style.height = playerHeight + "px";
 }
