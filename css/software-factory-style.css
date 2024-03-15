@@ -742,7 +742,7 @@ iframe {
   cursor: pointer;
 }
 .filter {
-  background-filter: blur(10px);
+  filter: blur(5px);
 }
 .empty-container {
   width: 85%;
@@ -2698,6 +2698,7 @@ h6 {
     padding-left: 20px;
     padding-right: 20px;
   }
+
   #how-we-will-do h2 {
     text-align: start;
   }

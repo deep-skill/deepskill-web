@@ -2,7 +2,12 @@ let player;
 let video;
 let closeButton = document.getElementById("player-close-button");
 let isVideoFullScreen = false;
-
+//for blur
+const heroSliderContentLeft = document.getElementById(
+  "hero-slider-content-left"
+);
+const header = document.getElementsByTagName("header")[0];
+const ourWork = document.getElementById("our-work");
 function onYouTubeIframeAPIReady() {
   player = new YT.Player("player", {
     videoId: "Q2z7rnIWSQ0",
@@ -20,11 +25,14 @@ function onYouTubeIframeAPIReady() {
 
 function onPlayerReady() {
   video = document.getElementById("player");
+  resizeVideo();
 }
 var done = false;
 function onPlayerStateChange(event) {
   if (event.data == YT.PlayerState.PLAYING && !done) {
     done = true;
+    if (window.innerWidth <= 580) return;
+    blurEverything();
     video.classList.add("video-fullscreen");
     closeButton.style.display = "block";
     closeButton.classList.add("player-close-button-style");
@@ -37,6 +45,7 @@ function onPlayerStateChange(event) {
 }
 closeButton.addEventListener("click", function () {
   video.classList.remove("video-fullscreen");
+  onBlurEverything();
   closeButton.style.display = "none";
   isVideoFullScreen = false;
   resizeVideo();
@@ -77,4 +86,16 @@ function resizeVideo() {
   closeButton.style.left = playerWidth * 1.25 + "px";
   video.style.width = playerWidth + "px";
   video.style.height = playerHeight + "px";
+}
+
+function blurEverything() {
+  heroSliderContentLeft.style.filter = "blur(5px)";
+  header.style.filter = "blur(5px)";
+  ourWork.style.filter = "blur(5px)";
+}
+
+function onBlurEverything() {
+  heroSliderContentLeft.style.filter = "blur(0px)";
+  header.style.filter = "blur(0px)";
+  ourWork.style.filter = "blur(0px)";
 }
