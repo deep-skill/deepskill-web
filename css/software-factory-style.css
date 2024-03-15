@@ -233,6 +233,23 @@ header {
   z-index: 100;
 }
 
+.redirect-li {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+}
+.redirect-button {
+  background: transparent;
+  color: white;
+  font-size: 15px;
+  padding: 0;
+}
+.redirect-button:hover {
+  cursor: pointer;
+}
+.redirect-button:focus {
+  outline: none;
+}
 header.fixed {
   /* position: fixed; */
   background: #000;
@@ -266,9 +283,6 @@ header nav ul li a span:before {
 header nav ul li a span {
   position: relative;
   display: block;
-  -webkit-transition: -webkit-transform 0.2s;
-  transition: transform 0.2s;
-  transform-origin: 100% 0%;
 }
 
 header nav ul li:hover a span {
