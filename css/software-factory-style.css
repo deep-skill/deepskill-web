@@ -2610,6 +2610,9 @@ h6 {
   .swiper-container-horizontal > .swiper-pagination-bullets {
     left: 29%;
   }
+  #design-system {
+    padding-left: 30px;
+  }
 }
 @media screen and (max-width: 470px) {
   .slider-content h1 {
