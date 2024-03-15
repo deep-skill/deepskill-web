@@ -746,7 +746,9 @@ iframe {
   font-size: 20px;
   background: transparent;
 }
-
+.player-close-button-style:focus {
+  outline: none;
+}
 .material-symbols-outlined {
   color: red;
   border: 1px solid red;
