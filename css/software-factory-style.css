@@ -741,9 +741,7 @@ iframe {
 .material-symbols-outlined:hover {
   cursor: pointer;
 }
-.filter {
-  filter: blur(5px);
-}
+
 .empty-container {
   width: 85%;
   height: 14%;
