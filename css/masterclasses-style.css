@@ -620,7 +620,7 @@ header nav ul li a:focus {
   height: 3px;
   position: absolute;
   top: -17px;
-  background: #4451FF !important;
+  background: #4451ff !important;
 }
 iframe {
   z-index: 2;
@@ -642,14 +642,16 @@ iframe {
   justify-content: space-around;
   margin-right: 15%;
   margin-top: 5%;
-  border: 3px solid #4451FF;
+  border: 3px solid #4451ff;
+  box-sizing: border-box;
+  padding: 3px;
   position: relative;
 }
 .absolute-title {
-  background-color: #4451FF;
+  background-color: #4451ff;
   position: absolute;
   top: -17px;
-  width: 101%;
+  width: calc(100% + 6px);
   text-align: center;
   height: 6%;
   font-weight: bold;
@@ -686,7 +688,7 @@ iframe {
 }
 #title1,
 #title2 {
-  color: #4451FF;
+  color: #4451ff;
   font-size: 1.2rem;
 }
 .prices-container {
@@ -710,7 +712,7 @@ iframe {
 }
 .price,
 .price-title {
-  color: #4451FF !important;
+  color: #4451ff !important;
   margin: 5% 0;
 }
 .descount-info {
@@ -725,7 +727,7 @@ iframe {
 .descount-info p {
   padding: 0;
   margin: 0;
-  color: #4451FF !important;
+  color: #4451ff !important;
   line-height: 1.2rem;
   font-weight: bold;
 }
@@ -733,7 +735,7 @@ iframe {
   font-size: 1.8rem;
 }
 #call-to-action {
-  background: #4451FF;
+  background: #4451ff;
   color: white;
   border-radius: 20px;
   /* font-size: 1rem !important; */
@@ -768,7 +770,7 @@ iframe {
 }
 
 .site-btn2 {
-  background: #4451FF;
+  background: #4451ff;
   color: white;
   border: 0;
   padding: 13px 36px;
@@ -1062,7 +1064,7 @@ section {
   color: white;
 }
 #mentores-span {
-  color: #4451FF;
+  color: #4451ff;
 }
 #mentores .container .section-title:before {
   background: white;
@@ -1081,7 +1083,7 @@ section {
   color: white;
 }
 #testimonials-span {
-  color: #4451FF !important;
+  color: #4451ff !important;
 }
 .testimonials .item figure img {
   max-width: 90px;
@@ -1143,7 +1145,7 @@ section {
   color: var(--text-green-python);
 }
 #portfolio-section span {
-  color: #4451FF;
+  color: #4451ff;
 }
 .portfolio_filter {
   margin-top: 64px;
@@ -1943,7 +1945,7 @@ footer .getintouch p {
 }
 
 .dark .bluebg {
-  background: #4451FF;
+  background: #4451ff;
 }
 
 .dark .graybg2 {
@@ -2057,7 +2059,7 @@ footer .getintouch p {
 .anews .category,
 .article-comments .comment-content .reply,
 .news-article .category {
-  color: #4451FF;
+  color: #4451ff;
 }
 
 .section-title,
@@ -2080,7 +2082,6 @@ footer .getintouch p {
   margin-bottom: 5px;
 }
 
-
 .section-title,
 .textsubtitle {
   color: white !important;
@@ -2098,7 +2099,7 @@ footer .getintouch p {
 }
 
 .service:hover {
-  background: #4451FF !important;
+  background: #4451ff !important;
 }
 
 .site-btn:hover {
@@ -2115,8 +2116,6 @@ footer .getintouch p {
     width: 1250px;
   }
 }
-
-
 
 @media screen and (min-width: 1256px) {
   #call-to-action {
