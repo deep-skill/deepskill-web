@@ -131,13 +131,19 @@
           <div class="video-container">
             <div class="info-container">
               <div class="absolute-title">¡QUEDAN 5 CUPOS!</div>
-              <iframe
+
+              <div id="player"></div>
+              <button id="player-close-button">
+                <span class="material-symbols-outlined">close</span>
+              </button>
+              <!-- <div class="empty-container">*</div> -->
+              <!-- <iframe
                 src="https://www.youtube.com/embed/Ni6SlemWS1Y"
                 title="Python para Ingenieros"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowfullscreen
-              ></iframe>
+              ></iframe> -->
 
               <div class="text-info">
                 <p><strong id="title1">Módulo 1</strong></p>
@@ -671,5 +677,7 @@
     <script src="js/jquery-2.1.4.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="js/masterclass-video.js"></script>
   </body>
 </html>
