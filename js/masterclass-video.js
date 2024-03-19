@@ -2,23 +2,46 @@ let player;
 let video;
 let closeButton = document.getElementById("player-close-button");
 let isVideoFullScreen = false;
-const infoContainer = document.getElementsByClassName("info-container")[0];
-//for blur
-// const heroSliderContentLeft = document.getElementById(
-//   "hero-slider-content-left"
-// );
-// const header = document.getElementsByTagName("header")[0];
-// const ourWork = document.getElementById("our-work");
-// const howWeWillDo = document.getElementById("how-we-will-do");
-// const whyChoseUs = document.getElementById("why-chose-us");
-// const ourTeam = document.getElementById("our-team");
-// const areYouReady = document.getElementById("are-you-ready");
-// const footer = document.getElementsByTagName("footer")[0];
-// const social = document.getElementById("social");
-// const textInfo = document.getElementById("text-info");
-// const descountInfo = document.getElementById("descount-info");
-// const callToAction = document.getElementById("call-to-action");
-// const scrollDown = document.getElementById("scrolldown");
+
+const elementsById = [
+  "hero-slider-content-left",
+  "social",
+  "descount-info",
+  "call-to-action",
+  "scrolldown",
+  "absolute-title",
+  "prices-container",
+];
+const elementsByTagName = ["header", "section", "footer"];
+const elementsByClassName = ["text-info"];
+let arraySections = [];
+
+elementsByClassName.forEach((className) => {
+  const elements = document.getElementsByClassName(className);
+  const elementsArray = Array.from(elements);
+  arraySections.push(...elementsArray);
+});
+
+// Obtener elementos por ID
+elementsById.forEach((id) => {
+  const element = document.getElementById(id);
+  if (element) {
+    arraySections.push(element);
+  }
+});
+
+// Obtener elementos por tagName
+elementsByTagName.forEach((tagName) => {
+  const elements = document.getElementsByTagName(tagName);
+  const elementsArray = Array.from(elements);
+
+  if (tagName === "section" && elementsArray.length > 0) {
+    elementsArray.shift();
+  }
+  arraySections.push(...elementsArray);
+  console.log(elementsArray);
+});
+console.log(arraySections);
 function onYouTubeIframeAPIReady() {
   player = new YT.Player("player", {
     videoId: "Ni6SlemWS1Y",
@@ -43,7 +66,7 @@ function onPlayerStateChange(event) {
   if (event.data == YT.PlayerState.PLAYING && !done) {
     done = true;
     if (window.innerWidth <= 580) return;
-    // blurToggle();
+    blurToggle();
     video.classList.add("video-fullscreen");
     closeButton.style.display = "block";
     closeButton.classList.add("player-close-button-style");
@@ -52,11 +75,10 @@ function onPlayerStateChange(event) {
   } else {
     done = false;
   }
-  console.log(done);
 }
 closeButton.addEventListener("click", function () {
   video.classList.remove("video-fullscreen");
-  // blurToggle(0);
+  blurToggle(0);
   closeButton.style.display = "none";
   isVideoFullScreen = false;
   resizeVideo();
@@ -100,26 +122,15 @@ function resizeVideo() {
 }
 
 function blurToggle(blur = 7) {
-  const elements = [
-    heroSliderContentLeft,
-    header,
-    ourWork,
-    howWeWillDo,
-    whyChoseUs,
-    ourTeam,
-    areYouReady,
-    footer,
-    social,
-    textInfo,
-    descountInfo,
-    callToAction,
-    scrollDown,
-  ];
-
-  elements.forEach((e) => {
-    e.style.transition = "filter 0.8s";
-    e.style.filter = `blur(${blur}px)`;
+  arraySections.forEach((e, index) => {
+    if (e) {
+      e.style.transition = "filter 0.8s";
+      e.style.filter = `blur(${blur}px)`;
+    } else {
+      console.log(`element in position ${index} is type ${typeof e}`);
+      return;
+    }
   });
-  infoContainer.style.transition = "border 0.5s";
-  infoContainer.style.border = blur !== 0 ? "none" : "3px solid var(--red)";
+  // infoContainer.style.transition = "border 0.5s";
+  // infoContainer.style.border = blur !== 0 ? "none" : "3px solid var(--red)";
 }
