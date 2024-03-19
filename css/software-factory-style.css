@@ -1316,18 +1316,21 @@ section2 {
 }
 
 .testimonials .item {
-  text-align: center;
+  text-align: justify;
 }
 
+.testimonials .item .text {
+  text-align: center !important;
+}
 .owl-theme .owl-nav.disabled + .owl-dots {
   margin-top: 40px;
 }
 
 .testimonials .item figure img {
-  max-width: 90px;
+  max-width: 120px;
   margin: 0 auto;
   border-radius: 50px;
-  -webkit-border-radius: 50px;
+  -webkit-border-radius: 65px;
   -moz-border-radius: 50px;
   -ms-border-radius: 50px;
   -o-border-radius: 50px;
@@ -1353,7 +1356,7 @@ section2 {
 
 .testimonials .outitem {
   background: #efefef;
-  padding: 40px;
+  padding: 10px 16px;
   border-radius: 8px;
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
@@ -1752,7 +1755,7 @@ section2 {
 .anews {
   background: #efefef;
   border-radius: 8px;
-  padding: 60px 40px;
+  padding: 20px 10px;
   display: inline-block;
   position: relative;
   overflow: hidden;
@@ -2190,7 +2193,7 @@ footer .getintouch p {
 }
 
 .dark .anews {
-  background: #2b2b2b;
+  background: #292929;
 }
 
 .dark .graybg .testimonials .outitem,
