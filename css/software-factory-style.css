@@ -29,7 +29,7 @@
 
 :root {
   --background-light-grey: #1c1c1c;
-  --red: #ff2323;
+  --green: #ADDB1D;
 }
 html,
 body {
@@ -714,7 +714,7 @@ iframe {
   height: 69%;
   justify-content: space-around;
   margin-right: 15%;
-  border: 3px solid var(--red);
+  border: 3px solid var(--green);
 }
 .info-container iframe {
   width: 85%;
@@ -782,7 +782,7 @@ iframe {
 }
 #title1,
 #title2 {
-  color: var(--red);
+  color: var(--green);
   font-size: 1rem;
 }
 
@@ -807,7 +807,7 @@ iframe {
 }
 .price,
 .price-title {
-  color: var(--red) !important;
+  color: var(--green) !important;
   margin: 5% 0;
 }
 .descount-info {
@@ -822,7 +822,7 @@ iframe {
 .descount-info p {
   padding: 0;
   margin: 0;
-  color: var(--red) !important;
+  color: var(--green) !important;
   line-height: 1.2rem;
   font-weight: bold;
 }
@@ -830,7 +830,7 @@ iframe {
   font-size: 1.6rem;
 }
 #call-to-action {
-  background: var(--red);
+  background: var(--green);
   color: black;
   border-radius: 20px;
   width: 85%;
@@ -1100,7 +1100,7 @@ iframe {
   font-size: 2rem;
 }
 .slider-title-subtitle span {
-  color: var(--red);
+  color: var(--green);
 }
 .slide-logo-img-container {
   display: flex;
@@ -2270,7 +2270,7 @@ footer .getintouch p {
 .site-btn,
 .section-title:before,
 .swiper-pagination-bullet-active {
-  background: var(--red);
+  background: var(--green);
 }
 
 .section-title span,
@@ -2279,13 +2279,12 @@ footer .getintouch p {
 .anews .category,
 .article-comments .comment-content .reply,
 .news-article .category {
-  color: #ff2323;
+  color: #ADDB1D;
 }
 
 .section-title,
 .text2 {
   margin-top: 10px;
-  color: #000000 !important;
 }
 
 .section-title,
