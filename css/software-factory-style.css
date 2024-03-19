@@ -2173,18 +2173,18 @@ footer .getintouch p {
 }
 
 .dark .graybg2 {
-  background: #addb1d;
+  background: #191919;
 }
 .dark .graybg .service {
   background: #292929;
 }
 
 .dark .service {
-  background: #191919;
+  background: #292929;
 }
 
 .dark .testimonials .outitem {
-  background: #191919;
+  background: #292929;
   height: 60vh;
   max-height: 420px;
 }
