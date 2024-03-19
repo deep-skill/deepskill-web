@@ -30,6 +30,7 @@
 :root {
   --background-light-grey: #1c1c1c;
   --text-green-python: #addb1d;
+  --blue-theme-color: #4451ff;
 }
 html,
 body {
@@ -582,6 +583,7 @@ header nav ul li a:focus {
   width: 42%;
   display: flex;
   flex-direction: column;
+  /* background: red; */
 }
 
 .slider-content h1 {
@@ -598,13 +600,21 @@ header nav ul li a:focus {
   -ms-transform: translateX(100px);
   -o-transform: translateX(100px);
 }
+#hero-left-text {
+  /* background: blue; */
+  margin-bottom: 4rem;
+}
+#hero-left-text > * {
+  margin-bottom: 1.2rem;
+}
 
 .slider-content p {
   color: #fff;
   font-family: Poppins-Regular;
-  font-size: 16px;
+  font-size: 1.2rem;
   text-align: justify;
-  margin-top: 10px;
+  /* margin-top: 10px; */
+  /* margin-bottom: 3rem; */
   width: 80%;
   transform: translateX(100px);
   -webkit-transform: translateX(100px);
@@ -636,7 +646,7 @@ header nav ul li a:focus {
   height: 3px;
   position: absolute;
   top: -17px;
-  background: #4451ff !important;
+  background: var(--blue-theme-color) !important;
 }
 iframe {
   z-index: 2;
@@ -658,19 +668,20 @@ iframe {
   justify-content: space-around;
   margin-right: 15%;
   margin-top: 5%;
-  border: 3px solid #4451ff;
+  border: 3px solid var(--blue-theme-color);
   box-sizing: border-box;
   padding: 3px;
   position: relative;
 }
 .absolute-title {
-  background-color: #4451ff;
+  background-color: var(--blue-theme-color);
   position: absolute;
   top: -17px;
   width: calc(100% + 6px);
   text-align: center;
   height: 6%;
   font-weight: bold;
+  font-size: 1.5rem;
   color: white;
   display: flex;
   justify-content: center;
@@ -717,8 +728,8 @@ iframe {
   outline: none;
 }
 .material-symbols-outlined {
-  color: red;
-  border: 1px solid red;
+  color: var(--blue-theme-color);
+  border: 1px solid var(--blue-theme-color);
   border-radius: 50%;
 }
 .material-symbols-outlined:hover {
@@ -741,7 +752,7 @@ iframe {
 }
 #title1,
 #title2 {
-  color: #4451ff;
+  color: var(--blue-theme-color);
   font-size: 1rem;
 }
 .prices-container {
@@ -765,7 +776,7 @@ iframe {
 }
 .price,
 .price-title {
-  color: #4451ff !important;
+  color: var(--blue-theme-color) !important;
   margin: 5% 0;
 }
 .descount-info {
@@ -780,7 +791,7 @@ iframe {
 .descount-info p {
   padding: 0;
   margin: 0;
-  color: #4451ff !important;
+  color: var(--blue-theme-color) !important;
   line-height: 1.2rem;
   font-weight: bold;
 }
@@ -788,7 +799,7 @@ iframe {
   font-size: 1.8rem;
 }
 #call-to-action {
-  background: #4451ff;
+  background: var(--blue-theme-color);
   color: white;
   border-radius: 20px;
   /* font-size: 1rem !important; */
@@ -823,7 +834,7 @@ iframe {
 }
 
 .site-btn2 {
-  background: #4451ff;
+  background: var(--blue-theme-color);
   color: white;
   border: 0;
   padding: 13px 36px;
@@ -1117,7 +1128,7 @@ section {
   color: white;
 }
 #mentores-span {
-  color: #4451ff;
+  color: var(--blue-theme-color);
 }
 #mentores .container .section-title:before {
   background: white;
@@ -1136,7 +1147,7 @@ section {
   color: white;
 }
 #testimonials-span {
-  color: #4451ff !important;
+  color: var(--blue-theme-color) !important;
 }
 .testimonials .item figure img {
   max-width: 90px;
@@ -1198,7 +1209,7 @@ section {
   color: var(--text-green-python);
 }
 #portfolio-section span {
-  color: #4451ff;
+  color: var(--blue-theme-color);
 }
 .portfolio_filter {
   margin-top: 64px;
@@ -1998,7 +2009,7 @@ footer .getintouch p {
 }
 
 .dark .bluebg {
-  background: #4451ff;
+  background: var(--blue-theme-color);
 }
 
 .dark .graybg2 {
@@ -2112,7 +2123,7 @@ footer .getintouch p {
 .anews .category,
 .article-comments .comment-content .reply,
 .news-article .category {
-  color: #4451ff;
+  color: var(--blue-theme-color);
 }
 
 .section-title,
@@ -2152,7 +2163,7 @@ footer .getintouch p {
 }
 
 .service:hover {
-  background: #4451ff !important;
+  background: var(--blue-theme-color) !important;
 }
 
 .site-btn:hover {
