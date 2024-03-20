@@ -486,6 +486,29 @@ header nav ul li a:focus {
   background: white;
   color: black;
 }
+
+.slider-content .design-subtitle {
+  position: absolute;
+  background: white;
+  color: black;
+  font-size: 50px !important;
+  top: 90px;
+  left: 190px;
+  padding: 0px 6px
+}
+
+@media screen and (max-width: 1230px) {
+  .slider-content .design-subtitle {
+    position: initial;
+    margin-left: 12px;
+    background: white;
+    color: black;
+    font-size: 50px !important;
+    padding: 0px 6px
+  }
+}
+
+
 .slider-content #hero-span:before {
   top: -20px;
 }
@@ -606,7 +629,14 @@ header nav ul li a:focus {
 }
 
 #hero-title-h1 {
+  position: relative;
   margin-bottom: 0;
+}
+
+@media screen and (max-width: 1230px) {
+  #hero-title-h1 {
+    margin-bottom: 0;
+  }
 }
 #hero-small-letters {
   margin: 0;
@@ -2373,7 +2403,7 @@ h6 {
 
 @media screen and (min-width: 1800px) {
   #call-to-action {
-    font-size: 1.2rem !important;
+    font-size: 1rem !important;
     weight: 90%;
    
   }
