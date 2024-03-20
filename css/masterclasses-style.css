@@ -435,8 +435,8 @@ header nav ul li a:focus {
 .whatsappButton {
   position: fixed;
   right: 30px;
-  bottom: 50px;
-  width: 60px;
+  bottom: 10%;
+  width: 80px;
   z-index: 1000;
   img {
     width: 100%;
@@ -681,7 +681,7 @@ iframe {
   text-align: center;
   height: 6%;
   font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   color: white;
   display: flex;
   justify-content: center;
@@ -747,37 +747,43 @@ iframe {
   justify-content: center;
 }
 .text-info p {
-  font-size: 0.7rem;
+  font-size: 1rem;
   line-height: 18px;
 }
 #title1,
 #title2 {
   color: var(--blue-theme-color);
-  font-size: 1rem;
+  font-size: 1.2rem;
+}
+#descount-info .descount {
+  color: white !important;
+  font-size: 1.6rem;
+}
+#all-prices-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
 }
 .prices-container {
   display: flex;
   flex-direction: row;
-
   width: 85%;
   align-items: center;
   justify-content: space-around;
+  margin-bottom: 0.8rem;
 }
 .price-button {
   text-align: center;
   font-weight: bold;
-
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.price-button p {
-  line-height: normal;
-}
+
 .price,
 .price-title {
   color: var(--blue-theme-color) !important;
-  margin: 5% 0;
 }
 .descount-info {
   background: black;
@@ -785,18 +791,18 @@ iframe {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  height: 15%;
   width: 100%;
 }
 .descount-info p {
   padding: 0;
-  margin: 0;
+  margin: 5px 0;
   color: var(--blue-theme-color) !important;
-  line-height: 1.2rem;
+  line-height: 0.8rem;
   font-weight: bold;
 }
 .descount {
   font-size: 1.8rem;
+  color: white !important;
 }
 #call-to-action {
   background: var(--blue-theme-color);
@@ -2293,6 +2299,8 @@ footer .getintouch p {
   .news-article .title {
     font-size: 32px;
   }
+  .whatsappButton {
+   bottom:2%;
 }
 @media screen and (max-width: 1020px) {
   #hero {
