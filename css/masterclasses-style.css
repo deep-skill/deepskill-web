@@ -1137,18 +1137,20 @@ section {
   color: var(--blue-theme-color);
 }
 #mentores .container .section-title:before {
-  background: white;
+  background: var(--blue-theme-color);
 }
 .testimonials .item {
   text-align: center;
+  
 }
-
+.testimonials .item:hover{
+  cursor:pointer;
+  
+}
 .owl-theme .owl-nav.disabled + .owl-dots {
   margin-top: 40px;
 }
-.testimonial .container .section-title:before {
-  background: white;
-}
+
 #testimonials-title {
   color: white;
 }
@@ -1209,7 +1211,7 @@ section {
 
 /*------------------------ Portfolio ------------------------*/
 #portfolio-section:before {
-  background: white;
+  background: var(--blue-theme-color);
 }
 #portfolio-section .title {
   color: var(--text-green-python);
@@ -2120,7 +2122,7 @@ footer .getintouch p {
 .site-btn,
 .section-title:before,
 .swiper-pagination-bullet-active {
-  background: #000000;
+  background:var(--blue-theme-color);;
 }
 
 .section-title span,
