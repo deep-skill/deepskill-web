@@ -43,8 +43,6 @@ body {
 }
 
 p {
-  /* font-size: 16px;
-  line-height: 30px; */
   margin: 0;
 }
 
@@ -2470,7 +2468,7 @@ footer .getintouch p {
     /* margin-top: 30px; */
   }
   .info-container {
-    height: 60%;
+    height: 70%;
   }
   .slider-content span {
     font-size: 15px;
@@ -2545,6 +2543,12 @@ footer .getintouch p {
   .news-article .title {
     font-size: 25px;
   }
+  #absolute-title{
+    font-size:0.9rem;
+  }
+  #call-to-action{
+    font-size:0.5rem !important;
+  }
 }
 
 @media screen and (max-width: 320px) {
@@ -2556,4 +2560,5 @@ footer .getintouch p {
     font-size: 40px;
     line-height: 50px;
   }
+ 
 }
