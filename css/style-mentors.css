@@ -622,6 +622,7 @@ header nav ul li a:focus{
 #hero-title-h1 {
   position: relative;
   margin-bottom: 0;
+  font-family: 'Poppins';
 }
 
 @media screen and (max-width: 1230px) {
@@ -635,6 +636,7 @@ header nav ul li a:focus{
 }
 #hero-small-paragraph {
   font-size: 1rem;
+  font-family: 'Poppins';
 }
 .slider-content h1 {
   color: #fff;
@@ -837,22 +839,26 @@ iframe {
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  height: 15%;
+  height: fit-content;
   width: 100%;
 }
 .descount-info p {
   padding: 0;
-  margin: 0;
+  margin: 5px;
   color: var(--blue) !important;
   line-height: 1.2rem;
   font-weight: bold;
+}
+#descount-price{
+  color:white !important;
+
 }
 .descount {
   font-size: 1.6rem;
 }
 #call-to-action {
   background: var(--blue);
-  color: black;
+  color: white;
   border-radius: 20px;
   width: 85%;
   height: 7%;
