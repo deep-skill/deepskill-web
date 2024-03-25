@@ -906,7 +906,6 @@ section{
 
 .testimonials .item figure img{
   max-width: 120px;
-  margin: 0 auto;
   border-radius: 70px;
   -webkit-border-radius: 70px;
   -moz-border-radius: 70px;
@@ -925,11 +924,11 @@ section{
 }
 
 .testimonials .item .title2{
-  font-size: 18px;
+  font-size: 15px;
   font-weight: 600;
   line-height: 1px;
-  color: #4451FF;
-  text-align: left;
+  color: white;
+  text-align: center;
 }
 
 .testimonials .item span{
@@ -949,7 +948,7 @@ section{
 
 .testimonials .outitem{
   background: #efefef;
-  padding: 40px;
+  padding: 0px;
   border-radius: 8px;
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
@@ -958,7 +957,20 @@ section{
 }
 
 .testimonials .outitem2{
-  height: 400px;
+  text-align: center;
+  height: 420px;
+  background: #292929;
+  padding: 40px;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+.testimonials .outitem3{
+  text-align: center;
+  height: 560px;
   background: #292929;
   padding: 40px;
   border-radius: 8px;
@@ -1356,7 +1368,7 @@ content: '\f03e';
 .anews{
   background: #efefef;
   border-radius: 8px;
-  padding:60px 40px; 
+  padding:30px 30px; 
   display: inline-block;    
   position: relative;
   overflow: hidden;
@@ -1371,6 +1383,13 @@ content: '\f03e';
 .anews .date{
   margin-bottom: 45px;
 }
+
+.testimonials .item .title {
+  margin-bottom: 25px;
+  font-size: 15px;
+  font-weight: 600;
+}
+
 
 .anews .date .big{
   font-size: 70px;
@@ -1394,11 +1413,11 @@ content: '\f03e';
   font-weight: 700;
   line-height: 52px;
 }
-/* @TODO
+
 .anews:hover > .image{
   opacity: 1;
 }
-*/
+
 .anews .image{
   opacity: 0;
   width: 100%;
@@ -1743,6 +1762,10 @@ footer .getintouch p {
   color: #fff;
 }
 
+.testimonials .item{
+text-align: justify;
+}
+
 .graybg .testimonials .outitem, .graybg .anews, .graybg .service{
   background: #fff;
 }
@@ -1766,6 +1789,8 @@ footer .getintouch p {
 
 .dark .testimonials .outitem{
   background: #292929;
+  height: 60vh;
+  max-height: 420px;
 }
 
 .dark .anews{
