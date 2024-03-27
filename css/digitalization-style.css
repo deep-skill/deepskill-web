@@ -425,7 +425,7 @@ header nav ul li a:focus {
   height: 100vh;
   margin: 0;
   padding: 0;
-  background-image: url("../img/background-masterclasses.webp");
+  background-image: url("../img/digitalization/background/background-digitalization.webp");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -468,7 +468,7 @@ header nav ul li a:focus {
   position: relative;
   z-index: 2;
   text-align: left;
-  width: 50%;
+  width: 100%;
   display: table-cell;
   vertical-align: middle;
 }
@@ -647,7 +647,6 @@ header nav ul li a:focus {
 }
 .slider-content h1 {
   color: #fff;
-  font-family: Poppins-Black;
   font-size: 70px;
   font-weight: 900;
   line-height: 100px;
@@ -688,11 +687,10 @@ header nav ul li a:focus {
 
 .slider-content p {
   color: #fff;
-  font-family: Poppins-Regular;
   font-size: 20px;
   text-align: justify;
   margin-top: 45px;
-  width: 80%;
+  width: 50%;
   transform: translateX(100px);
   -webkit-transform: translateX(100px);
   -moz-transform: translateX(100px);
