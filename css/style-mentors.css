@@ -1343,6 +1343,14 @@ section{
   text-align: center;
 }
 
+.testimonials .item .title3{
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1px;
+  color: #4451FF;
+  text-align: left;
+}
+
 .testimonials .item span{
   font-size: 13px;
 }
