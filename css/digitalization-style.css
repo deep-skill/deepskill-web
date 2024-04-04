@@ -1298,6 +1298,13 @@ section2 {
   line-height: 24px;
 }
 
+.about .infos .info p,
+.services .service2 p {
+  text-align: justify;
+  font-size: 14px;
+  line-height: 24px;
+}
+
 .service {
   background: #f3f3f3;
   height: 90%;
@@ -1313,6 +1320,23 @@ section2 {
   -ms-transition: all ease 0.3s;
   -o-transition: all ease 0.3s;
 }
+
+.service2 {
+    background: black;
+    height: 80%;
+    width: 85%;
+    padding: 35px;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+    margin-top: 100px;
+    transition: all ease 0.3s;
+    -moz-transition: all ease 0.3s;
+    -ms-transition: all ease 0.3s;
+    -o-transition: all ease 0.3s;
+  }
 
 .service:hover {
   color: #fff;
@@ -2195,7 +2219,7 @@ footer .getintouch p {
 }
 
 .dark .graybg {
-  background: #000;
+  background: #191919;
 }
 
 .dark .greenbg {
@@ -2208,6 +2232,82 @@ footer .getintouch p {
 
 .dark .graybg2 {
   background: #191919;
+}
+
+.dark .bgimage {
+  position: relative;
+  height: 160vh;
+  margin: 0;
+  padding: 20px;
+  background-image: url('../img/digitalization/background/bg-2.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (max-width: 991px) and (min-width: 514px) {
+    .dark .bgimage {
+        position: relative;
+        height: 260vh;
+        margin: 0;
+        padding: 20px;
+        background-image: url('../img/digitalization/background/bg-2.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    }
+
+
+@media (max-width: 514px)  and (min-width: 390px) {
+    .dark .bgimage {
+        position: relative;
+        height: 255vh;
+        margin: 0;
+        padding: 20px;
+        background-image: url('../img/digitalization/background/bg-2.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+  }
+}
+
+@media (max-width: 389px) and (min-width: 352px)   {
+    .dark .bgimage {
+        position: relative;
+        height: 330vh;
+        margin: 0;
+        padding: 20px;
+        background-image: url('../img/digitalization/background/bg-2.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+  }
+}
+
+@media (max-width: 351px) {
+    .dark .bgimage {
+        position: relative;
+        height: 330vh;
+        margin: 0;
+        padding: 20px;
+        background-image: url('../img/digitalization/background/bg-2.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+  }
+}
+.dark .bgimage2 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 50px;
+    background-image: url('../img/digitalization/background/bg-3.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  @media (max-width: 991px)  {
+    .dark .bgimage2 {
+        background: black;
+      }
 }
 .dark .graybg .service {
   background: #292929;
