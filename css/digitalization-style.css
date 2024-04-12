@@ -1030,7 +1030,7 @@ iframe {
 
 /*------------------ NUESTRO TRABAJO --------------------------*/
 .our-work {
-  height: 100vh !important;
+  height: 140vh !important;
 }
 .our-work h5,
 .our-work h6 {
@@ -1042,16 +1042,16 @@ iframe {
   width: 100%;
 }
 #slide-1 {
-  background-image: url("../img/software-factory/desktop-driver-background.webp");
+  background-image: url("../img/digitalization/background/deep-pit/bg-deep-pit.jpg");
 }
 #slide-2 {
-  background-image: url("../img/software-factory/deep-pharma/deep-pharma-background.webp");
+  background-image: url("../img/digitalization/background/sencico/bg-sencico.jpg");
 }
 #slide-3 {
-  background-image: url("../img/software-factory/cambios-jp/cambios-jp-background.webp");
+  background-image: url("../img/digitalization/background/deep-school/bg-deep-school.jpg");
 }
 #slide-4 {
-  background-image: url("../img/software-factory/mine-expert/mine-expert-background.webp");
+  background-image: url("../img/digitalization/background/silver-express/bg-silver-express.jpg");
 }
 .slider-info {
   height: 100vh;
@@ -1131,6 +1131,7 @@ iframe {
   color: var(--green);
 }
 .slide-logo-img-container {
+  background: blue;
   display: flex;
 }
 .slide-logo-img {
@@ -1201,9 +1202,16 @@ iframe {
 }
 
 .section-title2 {
-  padding-top: 0px;
+  padding-top: 30px;
   position: relative;
+}
+
+.section-title2 .title{
   color: white;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 34px;
+  letter-spacing: -1px;
 }
 
 .section-title .title {
@@ -1222,6 +1230,12 @@ iframe {
 }
 
 .section-title span {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.section-title2 span {
+  color: #ADDB1D;
   font-weight: 600;
   font-size: 18px;
 }
@@ -1374,6 +1388,7 @@ section2 {
   text-align: justify;
 }
 
+
 .testimonials .item .text {
   text-align: center !important;
 }
@@ -1390,6 +1405,12 @@ section2 {
   -ms-border-radius: 50px;
   -o-border-radius: 50px;
 }
+
+.testimonials .item figure .logo-digital {
+    max-width: 320px;
+    margin: 0 auto;
+  }
+
 
 .testimonials .item .name {
   margin: 30px 0px 6px;
@@ -2323,6 +2344,26 @@ footer .getintouch p {
   max-height: 420px;
 }
 
+
+.dark .testimonials .outitem2 {
+    background: #292929;
+    height: 18vh;
+    width: 48vh;
+    max-height: 420px;
+  }
+
+.dark .box{
+    display: flex !important;
+}
+
+.dark .testimonials .outitem3 {
+    background: #292929;
+    height: 18vh;
+    width: 100vh;
+    max-height: 420px;
+    float: right;
+  }
+
 .dark .anews {
   background: #292929;
 }
@@ -2613,6 +2654,21 @@ h6 {
   }
 }
 @media screen and (max-width: 1020px) {
+  .contenedor-principal {
+    display: none;
+  }
+  .contenedor-secundary {
+    display: none;
+  }
+  .contenedor-secundary-sencico {
+    display: none;
+  }
+  .contenedor-secundary-deep-school {
+    display: none;
+  }
+  .contenedor-secundary-silver-express {
+    display: none;
+  }
   .image-container-desktop {
     display: none;
   }
@@ -2906,4 +2962,404 @@ h6 {
   margin-top: 20px;
   padding: 0;
 }
+}
+
+//Seccion de nuestros trabajos
+
+ .contenedor-principal {
+  width: 100%;
+  margin: 40px auto;
+  overflow: hidden;
+  padding: 3%;
+ }
+ .contenedor2 {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 9%;
+  padding-right: 10%;
+ }
+ .contenedor3 {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 3%;
+  padding-right: 3%;
+ }
+
+ .left-content {
+  background-color: #3E3E3E;
+  height: 150px;
+  flex: 0 0 30%;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.right-content {
+  background-color: #3E3E3E;
+  width: 68%;
+  border-radius: 20px;
+}
+
+.image-main {
+  max-width: 60%;
+  max-height: 60%;
+  display: block;
+  margin: auto;
+}
+
+.text-content {
+  margin: 10px !important;
+  padding: 10px !important;
+  color: white;
+  -webkit-transform: translateX(0px)!important;
+}
+
+//
+
+.contenedor-secundary {
+  width: 100%;
+  margin: 40px auto;
+  overflow: hidden;
+  padding: 3%;
+ }
+
+ .contenedor-secundary2 {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 2%;
+  padding-left: 8%;
+  padding-right: 9%;
+  padding-bottom: 5%;
+ }
+
+.left-content-secundary {
+  background-color: #84A41E;
+  width: 30%;
+  height: 500px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.upper-part {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: visible;
+}
+
+.upper-part img {
+  max-width: 102%;
+  max-height: auto;
+  object-fit: cover;
+  margin-right: -5%;
+}
+
+.upper-part2 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: visible;
+}
+
+.upper-part2 img {
+  max-width: 102%;
+  max-height: auto;
+  object-fit: cover;
+  margin-top: -3%;
+}
+
+.lower-part {
+  flex: 0 0 80%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 30px !important;
+  box-sizing: border-box;
+}
+
+.lower-part h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  color: black;
+  font-weight: bold;
+}
+
+.lower-part p {
+  width: 100% !important;
+  margin-top: 0px !important;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  color: black !important;
+  font-weight: normal;
+  -webkit-transform: translateX(0px) !important;
+}
+
+
+.right-content-secundary {
+  background-color: #0A193A;
+  width: 35%;
+  height: 500px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.right-content-secundary .upper-part img {
+  margin-top: 10px;
+  max-width: 80%;
+  max-height: auto;
+  object-fit: cover;
+}
+
+.right-content-secundary .lower-part p {
+  width: 100% !important;
+  margin-top: 0px !important;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  color: white !important;
+  font-weight: normal;
+  -webkit-transform: translateX(0px) !important;
+}
+
+.right-content-secundary .lower-part h2 {
+  margin-top: 20px;
+  text-align: left;
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  color: #ADDB1D;
+  font-weight: bold;
+}
+
+ // CSS de Sencico
+
+ .contenedor-secundary-sencico {
+  width: 100%;
+  margin: 40px auto;
+  overflow: hidden;
+  padding: 3%;
+ }
+
+ .contenedor-secundary-sencico2 {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 2%;
+  padding-left: 9%;
+  padding-right: 10%;
+  padding-bottom: 5%;
+ }
+
+ .left-content-sencico {
+  display: flex;
+  height: 500px;
+  border-radius: 20px;
+  width: 57%;
+  background-color: #2C335A;
+ }
+
+ .left-content-sencico-image {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+ }
+
+ .left-content-sencico-image img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: fill;
+
+ }
+
+ .right-content-sencico {
+  width: 40%;
+  margin-left: auto;
+  height: 500px;
+  border-radius: 20px;
+ }
+
+ .rigth-content-sencico-text {
+  padding: 60px;
+  height: 25%;
+  flex: 1;
+  background-color: #04382B;
+  border-radius: 20px;
+  margin-bottom: 2%;
+ }
+
+ .rigth-content-sencico-text h2 {
+  text-align: left;
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+}
+
+.rigth-content-sencico-text p {
+  width: 100% !important;
+  margin-top: 0px !important;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  color: white !important;
+  font-weight: normal;
+  -webkit-transform: translateX(0px) !important;
+}
+
+
+// CSS Deep School
+
+.contenedor-secundary-deep-school {
+  width: 100%;
+  margin: 40px auto;
+  overflow: hidden;
+  padding: 3%;
+ }
+
+ .contenedor-secundary-deep-school2 {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 2%;
+  padding-left: 9%;
+  padding-right: 10%;
+  padding-bottom: 5%;
+ }
+
+ .right-content-deep-school {
+  display: flex;
+  height: 380px;
+  border-radius: 20px;
+  width: 68%;
+  background-color: #6EB7CA;
+ }
+
+ .right-content-deep-school-image {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: visible;
+ }
+
+ .right-content-deep-school-image img {
+  max-width: 100%;
+  max-height: auto;
+  object-fit: cover;
+  margin-bottom: -12%;
+
+ }
+
+ .left-content-deep-school {
+  display: flex;
+  height: 380px;
+  border-radius: 20px;
+  width: 30%;
+  background-color: #2C335A;
+ }
+
+ .rigth-content-deep-school-text {
+  padding: 60px;
+  background-color: #226AA1;
+  border-radius: 20px;
+ }
+
+ .rigth-content-deep-school-text h2 {
+  text-align: left;
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+}
+
+.rigth-content-deep-school-text p {
+  width: 100% !important;
+  margin-top: 0px !important;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  color: white !important;
+  font-weight: normal;
+  -webkit-transform: translateX(0px) !important;
+}
+
+
+// CSS Silver Express
+
+.contenedor-secundary-silver-express {
+  width: 100%;
+  margin: 40px auto;
+  overflow: hidden;
+  padding: 3%;
+ }
+
+ .contenedor-secundary-silver-express2 {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 2%;
+  padding-left: 9%;
+  padding-right: 10%;
+  padding-bottom: 5%;
+ }
+
+ .left-content-silver-express {
+  display: flex;
+  height: 450px;
+  border-radius: 20px;
+  width: 68%;
+  background-color: #164772;
+ }
+
+ .left-content-silver-express-image {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+ }
+
+ .left-content-silver-express-image img {
+  max-width: auto;
+  max-height: 100%;
+  object-fit: cover;
+  margin-bottom: -10px;
+
+ }
+
+ .rigth-content-silver-express {
+  display: flex;
+  height: 450px;
+  border-radius: 20px;
+  width: 30%;
+  background-color: #03132A;
+ }
+
+ .rigth-content-silver-express-text {
+  padding-top: 40px;
+  padding-left: 60px;
+  padding-right: 60px;
+  border-radius: 20px;
+ }
+
+ .rigth-content-silver-express-text h2 {
+  text-align: left;
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+}
+
+.rigth-content-silver-express-text p {
+  width: 100% !important;
+  margin-top: 10px !important;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  color: white !important;
+  font-weight: normal;
+  -webkit-transform: translateX(0px) !important;
 }
