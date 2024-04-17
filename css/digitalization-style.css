@@ -1085,7 +1085,23 @@ iframe {
   object-fit: contain;
 }
 
+
+.image-container-mobile div {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  object-fit: contain;
+}
+
 .image-container-mobile img:first-child {
+  opacity: 1;
+}
+
+.image-container-mobile div:first-child {
   opacity: 1;
 }
 
@@ -1107,7 +1123,7 @@ iframe {
   }
 }
 
-.image-container-mobile img:nth-child(1) {
+/* .image-container-mobile img:nth-child(1) {
   animation: imageFade 12s infinite 0s;
 }
 
@@ -1116,6 +1132,17 @@ iframe {
 }
 
 .image-container-mobile img:nth-child(3) {
+  animation: imageFade 12s infinite 8s;
+} */
+
+
+.image-container-mobile div:nth-child(1) {
+  animation: imageFade 12s infinite 0s;
+}
+.image-container-mobile div:nth-child(2) {
+  animation: imageFade 12s infinite 4s;
+}
+.image-container-mobile div:nth-child(3) {
   animation: imageFade 12s infinite 8s;
 }
 .image-container-desktop {
@@ -2653,6 +2680,22 @@ h6 {
     display: none;
   }
 }
+@media screen and (min-width: 1020px) {
+  .image-container-mobile2,
+  .slider-info h6,
+  #slider-title-subtitle-our-work {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1020px) {
+  .image-container-mobile-carrusel,
+  .slider-info h6,
+  #slider-title-subtitle-our-work {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 1020px) {
   .contenedor-principal {
     display: none;
@@ -2673,7 +2716,7 @@ h6 {
     display: none;
   }
   #hero {
-    height: 200vh;
+    height: 100vh;
   }
   .video-container {
     align-items: center;
@@ -2964,7 +3007,7 @@ h6 {
 }
 }
 
-//Seccion de nuestros trabajos
+//Seccion de nuestros trabajos / Reutilizado
 
  .contenedor-principal {
   width: 100%;
@@ -2977,6 +3020,12 @@ h6 {
   justify-content: space-between;
   padding-left: 9%;
   padding-right: 10%;
+ }
+ .contenedor2-movil {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
  }
  .contenedor3 {
   padding-top: 40px;
@@ -2995,11 +3044,33 @@ h6 {
   justify-content: center;
 }
 
+.left-content-movil {
+  background-color: #3E3E3E;
+  height: 180px;
+  //flex: 0 0 60%;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
 .right-content {
   background-color: #3E3E3E;
   width: 68%;
   border-radius: 20px;
 }
+
+.right-content-movil {
+  background-color: #3E3E3E;
+  flex: 0 0 60%;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
 
 .image-main {
   max-width: 60%;
@@ -3009,9 +3080,12 @@ h6 {
 }
 
 .text-content {
+  width: 95% !important;
   margin: 10px !important;
   padding: 10px !important;
-  color: white;
+  font-size: 14px !important;
+  text-align: center; /* Alinea el texto al centro */
+  overflow: hidden; /* Evita que el texto se desborde */
   -webkit-transform: translateX(0px)!important;
 }
 
@@ -3158,7 +3232,7 @@ h6 {
   height: 500px;
   border-radius: 20px;
   width: 57%;
-  background-color: #2C335A;
+  background: linear-gradient(to right, #2C335A, #02071F);
  }
 
  .left-content-sencico-image {
@@ -3235,7 +3309,7 @@ h6 {
   height: 380px;
   border-radius: 20px;
   width: 68%;
-  background-color: #6EB7CA;
+  background: linear-gradient(to bottom, #6EB7CA, #012C38);
  }
 
  .right-content-deep-school-image {
@@ -3311,7 +3385,7 @@ h6 {
   height: 450px;
   border-radius: 20px;
   width: 68%;
-  background-color: #164772;
+  background: linear-gradient(to bottom, #164772, #031524);
  }
 
  .left-content-silver-express-image {
@@ -3320,15 +3394,14 @@ h6 {
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
+  overflow: visible;
  }
 
  .left-content-silver-express-image img {
   max-width: auto;
   max-height: 100%;
   object-fit: cover;
-  margin-bottom: -10px;
-
+  margin-left: -110px;
  }
 
  .rigth-content-silver-express {
@@ -3362,4 +3435,186 @@ h6 {
   color: white !important;
   font-weight: normal;
   -webkit-transform: translateX(0px) !important;
+}
+
+// CSS Carrusel Silver Express
+ 
+.carrusel-silver-express1 {
+  position: relative;
+  width: 90%;
+  height: 250px;
+  overflow: hidden;
+}
+
+.carrusel-silver-express1 img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  //object-fit: cover;
+  background-color: #164772;
+  border-radius: 20px;
+}
+
+.carrusel-silver-express2 {
+  width: 90%;
+  height: 250px;
+  padding: 20px;
+  background-color: #03132A;
+  border-radius: 20px;
+}
+
+.carrusel-silver-express2 h2 {
+  margin-top: 20px;
+  text-align: left;
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+}
+
+.carrusel-silver-express2 p {
+  width: 80% !important;
+  margin-top: 20px !important;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  color: white !important;
+  font-weight: normal;
+  -webkit-transform: translateX(0px) !important;
+}
+
+// CSS Carrusel Deep School
+ 
+.carrusel-deep-school1 {
+  position: relative;
+  width: 90%;
+  height: 250px;
+  overflow: hidden;
+}
+
+.carrusel-deep-school1 img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  //object-fit: cover;
+  background-color: #6EB7CA;
+  border-radius: 20px;
+}
+
+.carrusel-deep-school2 {
+  width: 90%;
+  height: 250px;
+  padding: 20px;
+  background-color: #226AA1;
+  border-radius: 20px;
+}
+
+.carrusel-deep-school2 h2 {
+  margin-top: 20px;
+  text-align: left;
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+}
+
+.carrusel-deep-school2 p {
+  width: 80% !important;
+  margin-top: 20px !important;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  color: white !important;
+  font-weight: normal;
+  -webkit-transform: translateX(0px) !important;
+}
+
+// CSS Carrusel Sencico
+ 
+.carrusel-sencico1 {
+  position: relative;
+  width: 90%;
+  height: 250px;
+  overflow: hidden;
+}
+
+.carrusel-sencico1 img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  //object-fit: cover;
+  background-color: #2C335A;
+  border-radius: 20px;
+}
+
+.carrusel-sencico2 {
+  width: 90%;
+  height: 250px;
+  padding: 20px;
+  background-color: #04382B;
+  border-radius: 20px;
+}
+
+.carrusel-sencico2 h2 {
+  margin-top: 20px;
+  text-align: left;
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+}
+
+.carrusel-sencico2 p {
+  width: 80% !important;
+  margin-top: 20px !important;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  color: white !important;
+  font-weight: normal;
+  -webkit-transform: translateX(0px) !important;
+}
+
+.carrusel-sencico3 {
+  width: 90%;
+  height: 250px;
+  padding: 20px;
+  background-color: #02071F;
+  border-radius: 20px;
+}
+
+.carrusel-sencico3 h2 {
+  margin-top: 20px;
+  text-align: left;
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+}
+
+.carrusel-sencico3 p {
+  width: 80% !important;
+  margin-top: 20px !important;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  color: white !important;
+  font-weight: normal;
+  -webkit-transform: translateX(0px) !important;
+}
+
+// CSS Carrusel Deep Pit
+
+.carrusel-deep-pit1 {
+  position: relative;
+  width: 90%;
+  height: 450px;
+  overflow: hidden;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.carrusel-deep-pit1 img {
+  padding-bottom: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #84A41E;
+  border-radius: 20px;
 }
