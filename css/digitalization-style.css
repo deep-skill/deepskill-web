@@ -1467,6 +1467,17 @@ section2 {
   -o-border-radius: 8px;
 }
 
+.testimonials .outitem3 {
+  background: #efefef;
+  padding: 40px;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+
 .testimonials {
   padding: 30px 0;
 }
@@ -2371,6 +2382,10 @@ footer .getintouch p {
   max-height: 420px;
 }
 
+.dark .testimonials .outitem3 {
+  background: #292929;
+  height: 500px;
+}
 
 .dark .testimonials .outitem2 {
     background: #292929;
@@ -2384,11 +2399,7 @@ footer .getintouch p {
 }
 
 .dark .testimonials .outitem3 {
-    background: #292929;
-    height: 18vh;
-    width: 100vh;
-    max-height: 420px;
-    float: right;
+  height: 580px;
   }
 
 .dark .anews {
