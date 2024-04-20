@@ -2295,7 +2295,7 @@ footer .getintouch p {
 
 .dark .bgimage {
   position: relative;
-  height: 160vh;
+  height: 150vh;
   margin: 0;
   padding: 20px;
   background-image: url('../img/digitalization/background/bg-2.png');
@@ -3057,7 +3057,7 @@ h6 {
 
 .left-content-movil {
   background-color: #3E3E3E;
-  height: 180px;
+  height: 150px;
   //flex: 0 0 60%;
   border-radius: 20px;
   display: flex;
@@ -3080,6 +3080,7 @@ h6 {
   flex-direction: column;
   align-items: center;
   margin-bottom: 15px;
+  padding: 5px;
 }
 
 
@@ -3412,7 +3413,7 @@ h6 {
   max-width: auto;
   max-height: 100%;
   object-fit: cover;
-  margin-left: -110px;
+  margin-left: 0px;
  }
 
  .rigth-content-silver-express {
@@ -3462,7 +3463,7 @@ h6 {
   top: 0;
   left: 0;
   //object-fit: cover;
-  background-color: #164772;
+  background: linear-gradient(to bottom, #164772, #031524);
   border-radius: 20px;
 }
 
@@ -3506,8 +3507,7 @@ h6 {
   position: absolute;
   top: 0;
   left: 0;
-  //object-fit: cover;
-  background-color: #6EB7CA;
+  background: linear-gradient(to bottom, #6EB7CA, #012C38);
   border-radius: 20px;
 }
 
@@ -3551,8 +3551,7 @@ h6 {
   position: absolute;
   top: 0;
   left: 0;
-  //object-fit: cover;
-  background-color: #2C335A;
+  background: linear-gradient(to right, #2C335A, #02071F);
   border-radius: 20px;
 }
 
@@ -3622,6 +3621,7 @@ h6 {
 }
 
 .carrusel-deep-pit1 img {
+  height: 95% !important;
   padding-bottom: 20px;
   position: absolute;
   top: 0;
