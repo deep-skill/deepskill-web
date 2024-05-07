@@ -690,7 +690,7 @@ header nav ul li a:focus {
   font-size: 20px;
   text-align: justify;
   margin-top: 45px;
-  width: 50%;
+  width: 70%;
   transform: translateX(100px);
   -webkit-transform: translateX(100px);
   -moz-transform: translateX(100px);
@@ -2622,7 +2622,7 @@ h6 {
   }
   .hero .static-image .slider-content {
     width: 100%;
-    margin-top: 20%;
+    margin-top: 40%;
   }
   .info-container {
     margin: 0 auto;
@@ -3008,7 +3008,7 @@ h6 {
 @media screen and (max-width: 750px) {
   .slider-content .subtitle2 {
     font-size: 1.2rem;
-    text-align: center;
+    //text-align: center;
     line-height: normal;
   }
 }
@@ -3049,7 +3049,7 @@ h6 {
 
  .left-content {
   background-color: #3E3E3E;
-  height: 150px;
+  height: 161px;
   flex: 0 0 30%;
   border-radius: 20px;
   display: flex;
@@ -3375,6 +3375,15 @@ h6 {
   -webkit-transform: translateX(0px) !important;
 }
 
+@media screen and (min-width: 1021px) and (max-width: 1445px){
+  .rigth-content-deep-school-text {
+    padding: 30px;
+    background-color: #226AA1;
+    border-radius: 20px;
+   }
+
+}
+
 
 // CSS Silver Express
 
@@ -3396,7 +3405,7 @@ h6 {
 
  .left-content-silver-express {
   display: flex;
-  height: 450px;
+  height: 480px;
   border-radius: 20px;
   width: 68%;
   background: linear-gradient(to bottom, #164772, #031524);
@@ -3408,28 +3417,31 @@ h6 {
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: visible;
+  //overflow: visible;
+  overflow: hidden;
  }
 
  .left-content-silver-express-image img {
-  max-width: auto;
+  //max-width: auto;
+  max-width: 100%;
   max-height: 100%;
-  object-fit: cover;
+  //object-fit: cover;
+  object-fit: contain;
   margin-left: 0px;
  }
 
  .rigth-content-silver-express {
   display: flex;
-  height: 450px;
+  height: 480px;
   border-radius: 20px;
   width: 30%;
   background-color: #03132A;
  }
 
  .rigth-content-silver-express-text {
-  padding-top: 40px;
-  padding-left: 60px;
-  padding-right: 60px;
+  padding-top: 35px;
+  padding-left: 35px;
+  padding-right: 35px;
   border-radius: 20px;
  }
 
@@ -3450,6 +3462,41 @@ h6 {
   font-weight: normal;
   -webkit-transform: translateX(0px) !important;
 }
+
+@media screen and (min-width: 1021px) and (max-width: 1445px){
+
+  .left-content-silver-express {
+    display: flex;
+    height: 480px;
+    border-radius: 20px;
+    width: 63%;
+    background: linear-gradient(to bottom, #164772, #031524);
+   }
+
+  .rigth-content-silver-express {
+    display: flex;
+    height: 480px;
+    border-radius: 20px;
+    width: 35%;
+    background-color: #03132A;
+    overflow: hidden;
+  
+   }
+  
+  .rigth-content-silver-express-text p {
+    width: 100% !important;
+    margin-top: 10px !important;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: white !important;
+    font-weight: normal;
+    -webkit-transform: translateX(0px) !important;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+}
+
+
 
 // CSS Carrusel Silver Express
  
@@ -3487,13 +3534,13 @@ h6 {
 }
 
 .carrusel-silver-express2 p {
-  width: 80% !important;
+  width: 90% !important;
   margin-top: 20px !important;
   font-family: 'Poppins', sans-serif;
   font-size: 14px;
   color: white !important;
   font-weight: normal;
-  -webkit-transform: translateX(0px) !important;
+  -webkit-transform: translateX(-8px) !important;
 }
 
 // CSS Carrusel Deep School
