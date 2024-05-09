@@ -745,13 +745,15 @@ iframe {
   justify-content: center;
 }
 .text-info p {
+  text-align: center;
+  margin-bottom: 17px; 
   font-size: 1rem;
   line-height: 18px;
 }
 #title1,
 #title2 {
   color: var(--blue-theme-color);
-  font-size: 1.2rem;
+  font-size: 1.6rem;
 }
 #descount-info .descount {
   color: white !important;
@@ -781,6 +783,7 @@ iframe {
 
 .price,
 .price-title {
+  font-size: 20px;
   color: var(--blue-theme-color) !important;
 }
 .descount-info {
@@ -792,7 +795,7 @@ iframe {
   width: 100%;
 }
 .descount-info p {
-  padding: 0;
+  padding: 4px;
   margin: 5px 0;
   color: var(--blue-theme-color) !important;
   line-height: 0.8rem;
@@ -810,12 +813,12 @@ iframe {
   width: 88%;
   height: 6%;
   font-weight: bold;
-  font-size: 88% !important;
+  font-size: 90% !important;
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 2%;
+  padding: 6%;
 }
 .site-btn {
   display: inline-block;
