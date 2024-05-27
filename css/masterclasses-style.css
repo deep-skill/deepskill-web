@@ -739,25 +739,25 @@ iframe {
   color: var(--background-light-grey);
 } */
 .text-info {
-  width: 80%;
+  width: 87%;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 .text-info p {
-  text-align: center;
-  margin-bottom: 17px; 
-  font-size: 1rem;
+  //text-align: center;
+  margin-bottom: 8px; 
+  font-size: 0.8rem;
   line-height: 18px;
 }
 #title1,
 #title2 {
   color: var(--blue-theme-color);
-  font-size: 1.6rem;
+  font-size: 1rem;
 }
 #descount-info .descount {
   color: white !important;
-  font-size: 1.6rem;
+  font-size: 1.2rem;
 }
 #all-prices-container {
   display: flex;
@@ -781,9 +781,13 @@ iframe {
   align-items: center;
 }
 
+.price-button .price-title {
+  font-size: 12px !important;
+}
+
 .price,
 .price-title {
-  font-size: 20px;
+  font-size: 16px;
   color: var(--blue-theme-color) !important;
 }
 .descount-info {
@@ -795,11 +799,15 @@ iframe {
   width: 100%;
 }
 .descount-info p {
-  padding: 4px;
+  padding: 2px;
   margin: 5px 0;
   color: var(--blue-theme-color) !important;
-  line-height: 0.8rem;
+  line-height: 0.5rem;
   font-weight: bold;
+}
+
+.descount-info .descount-title {
+  font-size: 12px;
 }
 .descount {
   font-size: 1.8rem;
