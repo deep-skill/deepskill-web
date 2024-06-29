@@ -746,18 +746,21 @@ iframe {
 }
 .text-info p {
   //text-align: center;
-  margin-bottom: 8px; 
-  font-size: 0.8rem;
+  margin-top: 15px;
+  margin-bottom: 10px; 
+  font-size: 1rem;
   line-height: 18px;
 }
 #title1,
 #title2 {
   color: var(--blue-theme-color);
-  font-size: 1rem;
+  font-size: 1.3rem;
+  line-height: 25px;
 }
 #descount-info .descount {
   color: white !important;
-  font-size: 1.2rem;
+  font-size: 1.7rem;
+  padding: 15px;
 }
 #all-prices-container {
   display: flex;
